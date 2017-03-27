@@ -256,7 +256,7 @@ namespace QLBH_BunifuUI.form
             this.dtgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvProduct.Size = new System.Drawing.Size(400, 592);
             this.dtgvProduct.TabIndex = 6;
-            this.dtgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProduct_CellContentClick);
+//            this.dtgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProduct_CellContentClick);
             // 
             // panelProductDetail
             // 
