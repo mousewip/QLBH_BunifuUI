@@ -13,6 +13,10 @@ namespace QLBH_BunifuUI.form
         public cfpFrmCreateProduct()
         {
             InitializeComponent();
+            cbbCategory.DataSource = ProductCategoryDAO.Instance.View();
+            cbbCategory.DisplayMember = "PCName";
+            cbbCategory.ValueMember = "PCCode";
+
         }
         
         byte[] ConvertImage2Binary(Image img)
@@ -48,7 +52,7 @@ namespace QLBH_BunifuUI.form
             var product = new Product()
             {
                 ProductCode = txtProductCode.Text.Trim(),
-                PCCode = 1,
+                PCCode = int.Parse(cbbCategory.SelectedValue.ToString().Trim()),
                 ProductName = txtProductName.Text.Trim(),
                 Price = float.Parse(txtProductPrice.Text.Trim()),
                 Size = txtProductSize.Text.Trim(),

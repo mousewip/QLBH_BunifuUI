@@ -40,7 +40,7 @@ namespace QLBH_BunifuUI.form
             this.childFrmSettingElipse.ElipseRadius = 0;
             this.childFrmSettingElipse.TargetControl = this;
             // 
-            // childFrmSetting
+            // ChildFrmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

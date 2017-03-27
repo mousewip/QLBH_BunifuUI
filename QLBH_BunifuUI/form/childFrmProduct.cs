@@ -62,25 +62,5 @@ namespace QLBH_BunifuUI.form
         {
 
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dtgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void bunifuTileButton1_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton1_Click(object sender, System.EventArgs e)
-        {
-
-        }
     }
 }

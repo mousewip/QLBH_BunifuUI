@@ -4,8 +4,8 @@ namespace QLBH_BunifuUI.Common
 {
     public class Session
     {
-        private Dictionary<string, object> _listObject;
-        private void Add(string key, object value)
+        private static Dictionary<string, object> _listObject;
+        public void Add(string key, object value)
         {
             if (_listObject.ContainsKey(key))
                 _listObject[key] = value;
@@ -34,7 +34,7 @@ namespace QLBH_BunifuUI.Common
         }
 
 
-        private object Get(string key)
+        public object Get(string key)
         {
             if (_listObject.ContainsKey(key))
                 return _listObject[key];
