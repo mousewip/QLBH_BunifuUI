@@ -28,10 +28,7 @@ namespace QLBH_BunifuUI.form
         private void Login()
         {
             string SQLInstance = cbbSqlServer.SelectedValue.ToString();
-
-           // DTO.Properties.Settings.
-
-
+            
             int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
             if (result == 1)
             {
