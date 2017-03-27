@@ -48,27 +48,43 @@ namespace QLBH_BunifuUI.form
             this.btnAddProduct = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelDTGV = new System.Windows.Forms.Panel();
             this.dtgvProduct = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.ProductCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTipFrmProduct = new System.Windows.Forms.ToolTip(this.components);
-            this.panelProductDetail = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.panelProductDetail = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ProductCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).BeginInit();
@@ -79,6 +95,7 @@ namespace QLBH_BunifuUI.form
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProduct)).BeginInit();
             this.panelProductDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // childFrmProductElipse
@@ -256,41 +273,27 @@ namespace QLBH_BunifuUI.form
             this.dtgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvProduct.Size = new System.Drawing.Size(400, 592);
             this.dtgvProduct.TabIndex = 6;
-//            this.dtgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProduct_CellContentClick);
             // 
-            // panelProductDetail
+            // ProductCode
             // 
-            this.panelProductDetail.Controls.Add(this.bunifuFlatButton2);
-            this.panelProductDetail.Controls.Add(this.bunifuFlatButton1);
-            this.panelProductDetail.Controls.Add(this.textBox7);
-            this.panelProductDetail.Controls.Add(this.label7);
-            this.panelProductDetail.Controls.Add(this.textBox6);
-            this.panelProductDetail.Controls.Add(this.label6);
-            this.panelProductDetail.Controls.Add(this.textBox5);
-            this.panelProductDetail.Controls.Add(this.label5);
-            this.panelProductDetail.Controls.Add(this.textBox4);
-            this.panelProductDetail.Controls.Add(this.label4);
-            this.panelProductDetail.Controls.Add(this.textBox3);
-            this.panelProductDetail.Controls.Add(this.label3);
-            this.panelProductDetail.Controls.Add(this.textBox2);
-            this.panelProductDetail.Controls.Add(this.label2);
-            this.panelProductDetail.Controls.Add(this.textBox1);
-            this.panelProductDetail.Controls.Add(this.label1);
-            this.panelProductDetail.Controls.Add(this.pictureBox1);
-            this.panelProductDetail.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelProductDetail.Location = new System.Drawing.Point(436, 73);
-            this.panelProductDetail.Name = "panelProductDetail";
-            this.panelProductDetail.Size = new System.Drawing.Size(640, 592);
-            this.panelProductDetail.TabIndex = 5;
+            this.ProductCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ProductCode.DataPropertyName = "ProductCode";
+            this.ProductCode.FillWeight = 3.483456F;
+            this.ProductCode.HeaderText = "Code";
+            this.ProductCode.Name = "ProductCode";
+            this.ProductCode.ReadOnly = true;
+            this.ProductCode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductCode.Width = 200;
             // 
-            // pictureBox1
+            // ProductName
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(195, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 115);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.FillWeight = 9.949239F;
+            this.ProductName.HeaderText = "Tên";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            this.ProductName.Width = 200;
             // 
             // label1
             // 
@@ -349,14 +352,6 @@ namespace QLBH_BunifuUI.form
             this.textBox3.Size = new System.Drawing.Size(263, 26);
             this.textBox3.TabIndex = 6;
             // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(213, 309);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(263, 26);
-            this.textBox4.TabIndex = 8;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -368,13 +363,13 @@ namespace QLBH_BunifuUI.form
             this.label4.TabIndex = 7;
             this.label4.Text = "Danh mục";
             // 
-            // textBox5
+            // textBox4
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(213, 354);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(263, 26);
-            this.textBox5.TabIndex = 10;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(213, 309);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(263, 26);
+            this.textBox4.TabIndex = 8;
             // 
             // label5
             // 
@@ -387,13 +382,13 @@ namespace QLBH_BunifuUI.form
             this.label5.TabIndex = 9;
             this.label5.Text = "Số lượng";
             // 
-            // textBox6
+            // textBox5
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(213, 399);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(263, 26);
-            this.textBox6.TabIndex = 12;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(213, 354);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(263, 26);
+            this.textBox5.TabIndex = 10;
             // 
             // label6
             // 
@@ -406,13 +401,13 @@ namespace QLBH_BunifuUI.form
             this.label6.TabIndex = 11;
             this.label6.Text = "Nhãn hiệu";
             // 
-            // textBox7
+            // textBox6
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(213, 445);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(263, 26);
-            this.textBox7.TabIndex = 14;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(213, 399);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(263, 26);
+            this.textBox6.TabIndex = 12;
             // 
             // label7
             // 
@@ -424,6 +419,37 @@ namespace QLBH_BunifuUI.form
             this.label7.Size = new System.Drawing.Size(80, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Giảm giá";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(213, 445);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(263, 26);
+            this.textBox7.TabIndex = 14;
+            // 
+            // panelProductDetail
+            // 
+            this.panelProductDetail.Controls.Add(this.panel1);
+            this.panelProductDetail.Controls.Add(this.textBox7);
+            this.panelProductDetail.Controls.Add(this.label7);
+            this.panelProductDetail.Controls.Add(this.textBox6);
+            this.panelProductDetail.Controls.Add(this.label6);
+            this.panelProductDetail.Controls.Add(this.textBox5);
+            this.panelProductDetail.Controls.Add(this.label5);
+            this.panelProductDetail.Controls.Add(this.textBox4);
+            this.panelProductDetail.Controls.Add(this.label4);
+            this.panelProductDetail.Controls.Add(this.textBox3);
+            this.panelProductDetail.Controls.Add(this.label3);
+            this.panelProductDetail.Controls.Add(this.textBox2);
+            this.panelProductDetail.Controls.Add(this.label2);
+            this.panelProductDetail.Controls.Add(this.textBox1);
+            this.panelProductDetail.Controls.Add(this.label1);
+            this.panelProductDetail.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelProductDetail.Location = new System.Drawing.Point(436, 73);
+            this.panelProductDetail.Name = "panelProductDetail";
+            this.panelProductDetail.Size = new System.Drawing.Size(640, 592);
+            this.panelProductDetail.TabIndex = 5;
             // 
             // bunifuFlatButton1
             // 
@@ -459,6 +485,41 @@ namespace QLBH_BunifuUI.form
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(213, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 115);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuFlatButton3);
+            this.panel1.Controls.Add(this.bunifuFlatButton2);
+            this.panel1.Controls.Add(this.bunifuFlatButton1);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.textBox10);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.textBox11);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.textBox12);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.textBox14);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(640, 592);
+            this.panel1.TabIndex = 15;
+            // 
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -480,7 +541,7 @@ namespace QLBH_BunifuUI.form
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(403, 510);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(454, 510);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -493,26 +554,172 @@ namespace QLBH_BunifuUI.form
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // ProductCode
+            // textBox8
             // 
-            this.ProductCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ProductCode.DataPropertyName = "ProductCode";
-            this.ProductCode.FillWeight = 3.483456F;
-            this.ProductCode.HeaderText = "Code";
-            this.ProductCode.Name = "ProductCode";
-            this.ProductCode.ReadOnly = true;
-            this.ProductCode.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductCode.Width = 200;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(213, 445);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(263, 26);
+            this.textBox8.TabIndex = 14;
             // 
-            // ProductName
+            // label8
             // 
-            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.FillWeight = 9.949239F;
-            this.ProductName.HeaderText = "Tên";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            this.ProductName.Width = 200;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label8.Location = new System.Drawing.Point(48, 448);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 20);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Giảm giá";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(213, 399);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(263, 26);
+            this.textBox9.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label9.Location = new System.Drawing.Point(48, 402);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 20);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Nhãn hiệu";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(213, 354);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(263, 26);
+            this.textBox10.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label10.Location = new System.Drawing.Point(48, 357);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 20);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Số lượng";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(213, 309);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(263, 26);
+            this.textBox11.TabIndex = 8;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label11.Location = new System.Drawing.Point(48, 312);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 20);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Danh mục";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(213, 264);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(263, 26);
+            this.textBox12.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label12.Location = new System.Drawing.Point(48, 267);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 20);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Giá";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(213, 219);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(263, 26);
+            this.textBox13.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label13.Location = new System.Drawing.Point(48, 222);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 20);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Code";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(213, 173);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(263, 26);
+            this.textBox14.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label14.Location = new System.Drawing.Point(48, 176);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 20);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Tên sản phẩm";
+            // 
+            // bunifuFlatButton3
+            // 
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton3.BorderRadius = 0;
+            this.bunifuFlatButton3.ButtonText = "Hủy";
+            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
+            this.bunifuFlatButton3.Iconimage_right = null;
+            this.bunifuFlatButton3.Iconimage_right_Selected = null;
+            this.bunifuFlatButton3.Iconimage_Selected = null;
+            this.bunifuFlatButton3.IconMarginLeft = 0;
+            this.bunifuFlatButton3.IconMarginRight = 0;
+            this.bunifuFlatButton3.IconRightVisible = true;
+            this.bunifuFlatButton3.IconRightZoom = 0D;
+            this.bunifuFlatButton3.IconVisible = true;
+            this.bunifuFlatButton3.IconZoom = 90D;
+            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(293, 510);
+            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.selected = false;
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(140, 40);
+            this.bunifuFlatButton3.TabIndex = 38;
+            this.bunifuFlatButton3.Text = "Hủy";
+            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ChildFrmProduct
             // 
@@ -536,6 +743,8 @@ namespace QLBH_BunifuUI.form
             this.panelProductDetail.ResumeLayout(false);
             this.panelProductDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -552,11 +761,28 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Panel panelDTGV;
         private System.Windows.Forms.ToolTip toolTipFrmProduct;
         private BunifuMetroTextbox txtSearch;
-        private System.Windows.Forms.Panel panelProductDetail;
         private BunifuCustomDataGrid dtgvProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.Panel panelProductDetail;
+        private System.Windows.Forms.Panel panel1;
+        private BunifuFlatButton bunifuFlatButton2;
+        private BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
@@ -569,9 +795,8 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private BunifuFlatButton bunifuFlatButton1;
-        private BunifuFlatButton bunifuFlatButton2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private BunifuFlatButton bunifuFlatButton3;
     }
 }
