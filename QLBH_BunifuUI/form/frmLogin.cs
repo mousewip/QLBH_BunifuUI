@@ -27,8 +27,18 @@ namespace QLBH_BunifuUI.form
 
         private void Login()
         {
-            string SQLInstance = cbbSqlServer.SelectedValue.ToString();
-            
+            string SQLInstance;
+            if (cbbSqlServer.SelectedValue == null)
+                SQLInstance = cbbSqlServer.Text.Trim();
+            else
+            {
+                SQLInstance = cbbSqlServer.SelectedValue.ToString();
+            }
+            DTO.Properties.Settings.Default.ShopTPTConnectionString =
+                "Data Source="+ SQLInstance+";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+                "a;Password=tpt";
+
+
             int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
             if (result == 1)
             {
@@ -36,7 +46,7 @@ namespace QLBH_BunifuUI.form
                 Splash.frmMain.ShowDialog();
                 Show();
             }
-            else if(result == 2)
+            else if(result == 0)
             {
                 MessageBox.Show(@"Sai tên đăng nhập hoặc mật khẩu", @"Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
