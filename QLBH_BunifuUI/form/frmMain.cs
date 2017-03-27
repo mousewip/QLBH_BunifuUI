@@ -10,7 +10,9 @@ namespace QLBH_BunifuUI.form
         public FrmMain()
         {
             InitializeComponent();
-            
+            var sAtt = DTO.Properties.Settings.Default.ShopTPTConnectionString;
+
+            //richTextBox1.Text = sAtt;
         }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
@@ -42,7 +44,7 @@ namespace QLBH_BunifuUI.form
             if(panelLeft.Width == 50)
             {
                 panelLeft.Visible = true;
-                panelLeft.Width = 200;
+                panelLeft.Width = 250;
                 LogoTransition.ShowSync(pictrueBoxLogo);
             }
             else
@@ -145,6 +147,11 @@ namespace QLBH_BunifuUI.form
             {
                 Close();
             }
+        }
+
+        private void bunifuSeparator1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

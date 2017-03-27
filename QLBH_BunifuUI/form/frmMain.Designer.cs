@@ -74,12 +74,12 @@ namespace QLBH_BunifuUI.form
             // 
             // bunifuElipseFRMMain
             // 
-            this.bunifuElipseFRMMain.ElipseRadius = 5;
+            this.bunifuElipseFRMMain.ElipseRadius = 3;
             this.bunifuElipseFRMMain.TargetControl = this;
             // 
             // panelLeft
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.panelLeft.Controls.Add(this.btnLogout);
             this.panelLeft.Controls.Add(this.btnAbout);
             this.panelLeft.Controls.Add(this.btnSetting);
@@ -95,14 +95,14 @@ namespace QLBH_BunifuUI.form
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 35);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(200, 565);
+            this.panelLeft.Size = new System.Drawing.Size(250, 665);
             this.panelLeft.TabIndex = 0;
             // 
             // btnLogout
             // 
-            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 0;
             this.btnLogout.ButtonText = "     Đăng Xuất";
@@ -124,28 +124,28 @@ namespace QLBH_BunifuUI.form
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 60D;
             this.btnLogout.IsTab = true;
-            this.btnLogout.Location = new System.Drawing.Point(0, 515);
+            this.btnLogout.Location = new System.Drawing.Point(0, 615);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(200, 50);
+            this.btnLogout.Size = new System.Drawing.Size(250, 50);
             this.btnLogout.TabIndex = 8;
             this.btnLogout.Text = "     Đăng Xuất";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Textcolor = System.Drawing.Color.White;
-            this.btnLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAbout
             // 
-            this.btnAbout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnAbout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAbout.BorderRadius = 0;
-            this.btnAbout.ButtonText = "     Giới Thiệu";
+            this.btnAbout.ButtonText = "    GIỚI THIỆU";
             this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnAbout, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnAbout, BunifuAnimatorNS.DecorationType.None);
@@ -164,28 +164,28 @@ namespace QLBH_BunifuUI.form
             this.btnAbout.IconVisible = true;
             this.btnAbout.IconZoom = 60D;
             this.btnAbout.IsTab = true;
-            this.btnAbout.Location = new System.Drawing.Point(0, 384);
+            this.btnAbout.Location = new System.Drawing.Point(0, 414);
             this.btnAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnAbout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnAbout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnAbout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnAbout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAbout.selected = false;
-            this.btnAbout.Size = new System.Drawing.Size(200, 50);
+            this.btnAbout.Size = new System.Drawing.Size(250, 50);
             this.btnAbout.TabIndex = 7;
-            this.btnAbout.Text = "     Giới Thiệu";
+            this.btnAbout.Text = "    GIỚI THIỆU";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAbout.Textcolor = System.Drawing.Color.White;
-            this.btnAbout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnSetting
             // 
-            this.btnSetting.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnSetting.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSetting.BorderRadius = 0;
-            this.btnSetting.ButtonText = "      Cài Đặt";
+            this.btnSetting.ButtonText = "  CÀI ĐẶT";
             this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnSetting, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnSetting, BunifuAnimatorNS.DecorationType.None);
@@ -204,28 +204,28 @@ namespace QLBH_BunifuUI.form
             this.btnSetting.IconVisible = true;
             this.btnSetting.IconZoom = 60D;
             this.btnSetting.IsTab = true;
-            this.btnSetting.Location = new System.Drawing.Point(0, 334);
+            this.btnSetting.Location = new System.Drawing.Point(0, 364);
             this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnSetting.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnSetting.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnSetting.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnSetting.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSetting.selected = false;
-            this.btnSetting.Size = new System.Drawing.Size(200, 50);
+            this.btnSetting.Size = new System.Drawing.Size(250, 50);
             this.btnSetting.TabIndex = 6;
-            this.btnSetting.Text = "      Cài Đặt";
+            this.btnSetting.Text = "  CÀI ĐẶT";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.Textcolor = System.Drawing.Color.White;
-            this.btnSetting.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnUser
             // 
-            this.btnUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUser.BorderRadius = 0;
-            this.btnUser.ButtonText = "     Nhân Viên";
+            this.btnUser.ButtonText = "  NHÂN VIÊN";
             this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnUser, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnUser, BunifuAnimatorNS.DecorationType.None);
@@ -244,28 +244,28 @@ namespace QLBH_BunifuUI.form
             this.btnUser.IconVisible = true;
             this.btnUser.IconZoom = 60D;
             this.btnUser.IsTab = true;
-            this.btnUser.Location = new System.Drawing.Point(0, 283);
+            this.btnUser.Location = new System.Drawing.Point(0, 313);
             this.btnUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnUser.OnHoverTextColor = System.Drawing.Color.White;
             this.btnUser.selected = false;
-            this.btnUser.Size = new System.Drawing.Size(200, 50);
+            this.btnUser.Size = new System.Drawing.Size(250, 50);
             this.btnUser.TabIndex = 5;
-            this.btnUser.Text = "     Nhân Viên";
+            this.btnUser.Text = "  NHÂN VIÊN";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUser.Textcolor = System.Drawing.Color.White;
-            this.btnUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnProductCategory
             // 
-            this.btnProductCategory.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnProductCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnProductCategory.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnProductCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnProductCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProductCategory.BorderRadius = 0;
-            this.btnProductCategory.ButtonText = "     Danh Mục Sản Phẩm";
+            this.btnProductCategory.ButtonText = "  DANH MỤC SẢN PHẨM";
             this.btnProductCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnProductCategory, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnProductCategory, BunifuAnimatorNS.DecorationType.None);
@@ -284,28 +284,28 @@ namespace QLBH_BunifuUI.form
             this.btnProductCategory.IconVisible = true;
             this.btnProductCategory.IconZoom = 60D;
             this.btnProductCategory.IsTab = true;
-            this.btnProductCategory.Location = new System.Drawing.Point(0, 233);
+            this.btnProductCategory.Location = new System.Drawing.Point(0, 263);
             this.btnProductCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProductCategory.Name = "btnProductCategory";
-            this.btnProductCategory.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnProductCategory.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnProductCategory.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnProductCategory.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnProductCategory.OnHoverTextColor = System.Drawing.Color.White;
             this.btnProductCategory.selected = false;
-            this.btnProductCategory.Size = new System.Drawing.Size(200, 50);
+            this.btnProductCategory.Size = new System.Drawing.Size(250, 50);
             this.btnProductCategory.TabIndex = 4;
-            this.btnProductCategory.Text = "     Danh Mục Sản Phẩm";
+            this.btnProductCategory.Text = "  DANH MỤC SẢN PHẨM";
             this.btnProductCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductCategory.Textcolor = System.Drawing.Color.White;
-            this.btnProductCategory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductCategory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductCategory.Click += new System.EventHandler(this.btnProductCategory_Click);
             // 
             // btnProduct
             // 
-            this.btnProduct.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnProduct.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProduct.BorderRadius = 0;
-            this.btnProduct.ButtonText = "     Sản Phẩm";
+            this.btnProduct.ButtonText = "  SẢN PHẨM";
             this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnProduct, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnProduct, BunifuAnimatorNS.DecorationType.None);
@@ -324,28 +324,28 @@ namespace QLBH_BunifuUI.form
             this.btnProduct.IconVisible = true;
             this.btnProduct.IconZoom = 60D;
             this.btnProduct.IsTab = true;
-            this.btnProduct.Location = new System.Drawing.Point(0, 183);
+            this.btnProduct.Location = new System.Drawing.Point(0, 213);
             this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnProduct.OnHoverTextColor = System.Drawing.Color.White;
             this.btnProduct.selected = false;
-            this.btnProduct.Size = new System.Drawing.Size(200, 50);
+            this.btnProduct.Size = new System.Drawing.Size(250, 50);
             this.btnProduct.TabIndex = 3;
-            this.btnProduct.Text = "     Sản Phẩm";
+            this.btnProduct.Text = "  SẢN PHẨM";
             this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProduct.Textcolor = System.Drawing.Color.White;
-            this.btnProduct.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnBill
             // 
-            this.btnBill.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnBill.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBill.BorderRadius = 0;
-            this.btnBill.ButtonText = "     Hóa Đơn";
+            this.btnBill.ButtonText = "  HÓA ĐƠN";
             this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnBill, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnBill, BunifuAnimatorNS.DecorationType.None);
@@ -364,33 +364,33 @@ namespace QLBH_BunifuUI.form
             this.btnBill.IconVisible = true;
             this.btnBill.IconZoom = 60D;
             this.btnBill.IsTab = true;
-            this.btnBill.Location = new System.Drawing.Point(0, 132);
+            this.btnBill.Location = new System.Drawing.Point(0, 162);
             this.btnBill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnBill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnBill.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnBill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnBill.OnHoverTextColor = System.Drawing.Color.White;
             this.btnBill.selected = false;
-            this.btnBill.Size = new System.Drawing.Size(200, 50);
+            this.btnBill.Size = new System.Drawing.Size(250, 50);
             this.btnBill.TabIndex = 2;
-            this.btnBill.Text = "     Hóa Đơn";
+            this.btnBill.Text = "  HÓA ĐƠN";
             this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBill.Textcolor = System.Drawing.Color.White;
-            this.btnBill.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashboard.BorderRadius = 0;
-            this.btnDashboard.ButtonText = "     Thống Kê";
+            this.btnDashboard.ButtonText = "  THỐNG KÊ";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelTransition.SetDecoration(this.btnDashboard, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnDashboard, BunifuAnimatorNS.DecorationType.None);
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
@@ -404,30 +404,30 @@ namespace QLBH_BunifuUI.form
             this.btnDashboard.IconVisible = true;
             this.btnDashboard.IconZoom = 60D;
             this.btnDashboard.IsTab = true;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 82);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 112);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
-            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnDashboard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnDashboard.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDashboard.selected = true;
-            this.btnDashboard.Size = new System.Drawing.Size(200, 50);
+            this.btnDashboard.Size = new System.Drawing.Size(250, 50);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "     Thống Kê";
+            this.btnDashboard.Text = "  THỐNG KÊ";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Textcolor = System.Drawing.Color.White;
-            this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnMenu
             // 
             this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(126)))), ((int)(((byte)(130)))));
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.PanelTransition.SetDecoration(this.btnMenu, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnMenu, BunifuAnimatorNS.DecorationType.None);
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.ImageActive = null;
-            this.btnMenu.Location = new System.Drawing.Point(159, 3);
+            this.btnMenu.Location = new System.Drawing.Point(209, 18);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(35, 35);
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -443,14 +443,14 @@ namespace QLBH_BunifuUI.form
             this.pictrueBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictrueBoxLogo.Image")));
             this.pictrueBoxLogo.Location = new System.Drawing.Point(0, 0);
             this.pictrueBoxLogo.Name = "pictrueBoxLogo";
-            this.pictrueBoxLogo.Size = new System.Drawing.Size(134, 69);
+            this.pictrueBoxLogo.Size = new System.Drawing.Size(203, 95);
             this.pictrueBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictrueBoxLogo.TabIndex = 0;
             this.pictrueBoxLogo.TabStop = false;
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
             this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Controls.Add(this.pictureBoxTitle);
             this.panelHeader.Controls.Add(this.panelExit);
@@ -459,7 +459,7 @@ namespace QLBH_BunifuUI.form
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1000, 35);
+            this.panelHeader.Size = new System.Drawing.Size(1326, 35);
             this.panelHeader.TabIndex = 1;
             // 
             // lblTitle
@@ -467,11 +467,11 @@ namespace QLBH_BunifuUI.form
             this.lblTitle.AutoSize = true;
             this.LogoTransition.SetDecoration(this.lblTitle, BunifuAnimatorNS.DecorationType.None);
             this.PanelTransition.SetDecoration(this.lblTitle, BunifuAnimatorNS.DecorationType.None);
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Transparent;
             this.lblTitle.Location = new System.Drawing.Point(45, 7);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(150, 21);
+            this.lblTitle.Size = new System.Drawing.Size(204, 23);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "DASHBOARD - TPT";
             // 
@@ -489,28 +489,28 @@ namespace QLBH_BunifuUI.form
             // 
             // panelExit
             // 
-            this.panelExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.panelExit.BackColor = System.Drawing.Color.Transparent;
             this.panelExit.Controls.Add(this.btnClose);
             this.panelExit.Controls.Add(this.btnMaximize);
             this.panelExit.Controls.Add(this.btnMinimize);
             this.PanelTransition.SetDecoration(this.panelExit, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.panelExit, BunifuAnimatorNS.DecorationType.None);
             this.panelExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelExit.Location = new System.Drawing.Point(890, 0);
+            this.panelExit.Location = new System.Drawing.Point(1167, 0);
             this.panelExit.Name = "panelExit";
-            this.panelExit.Size = new System.Drawing.Size(110, 35);
+            this.panelExit.Size = new System.Drawing.Size(159, 35);
             this.panelExit.TabIndex = 10;
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
             this.PanelTransition.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(82, 3);
+            this.btnClose.Location = new System.Drawing.Point(113, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(25, 25);
+            this.btnClose.Size = new System.Drawing.Size(43, 30);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 12;
             this.btnClose.TabStop = false;
@@ -519,14 +519,14 @@ namespace QLBH_BunifuUI.form
             // 
             // btnMaximize
             // 
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
             this.PanelTransition.SetDecoration(this.btnMaximize, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnMaximize, BunifuAnimatorNS.DecorationType.None);
             this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
             this.btnMaximize.ImageActive = null;
-            this.btnMaximize.Location = new System.Drawing.Point(41, 2);
+            this.btnMaximize.Location = new System.Drawing.Point(67, 3);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximize.Size = new System.Drawing.Size(43, 30);
             this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximize.TabIndex = 11;
             this.btnMaximize.TabStop = false;
@@ -535,14 +535,14 @@ namespace QLBH_BunifuUI.form
             // 
             // btnMinimize
             // 
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
             this.PanelTransition.SetDecoration(this.btnMinimize, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnMinimize, BunifuAnimatorNS.DecorationType.None);
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
             this.btnMinimize.ImageActive = null;
-            this.btnMinimize.Location = new System.Drawing.Point(7, 2);
+            this.btnMinimize.Location = new System.Drawing.Point(20, 3);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.Size = new System.Drawing.Size(43, 30);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimize.TabIndex = 10;
             this.btnMinimize.TabStop = false;
@@ -591,9 +591,9 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(200, 35);
+            this.panelMain.Location = new System.Drawing.Point(250, 35);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(800, 565);
+            this.panelMain.Size = new System.Drawing.Size(1076, 665);
             this.panelMain.TabIndex = 2;
             // 
             // PanelTransition
@@ -624,7 +624,7 @@ namespace QLBH_BunifuUI.form
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(1326, 700);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelHeader);
