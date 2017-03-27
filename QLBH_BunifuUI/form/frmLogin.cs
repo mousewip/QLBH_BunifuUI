@@ -12,7 +12,7 @@ namespace QLBH_BunifuUI.form
         public FrmLogin()
         {
             InitializeComponent();
-            Process();
+            Process(); //213123
         }
 
         private void btnExit_Click(object sender, EventArgs e)
