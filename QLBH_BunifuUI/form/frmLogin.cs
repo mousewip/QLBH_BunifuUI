@@ -1,0 +1,102 @@
+﻿using System;
+using System.Windows.Forms;
+using DTO;
+using DTO.DAO;
+using QLBH_BunifuUI.Common;
+using QLBH_BunifuUI.SQL;
+
+namespace QLBH_BunifuUI.form
+{
+    public partial class FrmLogin : Form
+    {
+        public FrmLogin()
+        {
+            InitializeComponent();
+            Process();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+
+        private void Login()
+        {
+            string SQLInstance = cbbSqlServer.SelectedValue.ToString();
+
+           // DTO.Properties.Settings.
+
+
+            int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
+            if (result == 1)
+            {
+                Hide();
+                Splash.frmMain.ShowDialog();
+                Show();
+            }
+            else if(result == 2)
+            {
+                MessageBox.Show(@"Sai tên đăng nhập hoặc mật khẩu", @"Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("Không thể kết nối đến CSDL");
+            }
+
+        }
+
+        private int CheckLogin(string userName, string pass)
+        {
+            try
+            {
+                return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? 1 : 0;
+            }
+            catch (Exception)
+            {
+
+                
+                return -1;
+            }
+           // return false;
+            //return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? true : false;
+        }
+        
+        private void Process()
+        {
+            // Retrieve the enumerator instance and then the data.  
+           // var instance = SqlDataSourceEnumerator.Instance;
+            var table = FindSqlServerName.GetAllSqlServerName();
+
+            cbbSqlServer.DataSource = table;
+
+            cbbSqlServer.DisplayMember = "ServerName";
+            cbbSqlServer.ValueMember = "ServerName";
+        }
+        private void txtUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPassword.Focus();
+            }
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login();
+            }
+            
+        }
+
+        private void cbbSqlServer_DropDown(object sender, EventArgs e)
+        {
+            Process();
+        }
+    }
+}
