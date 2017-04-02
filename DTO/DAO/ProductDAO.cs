@@ -114,5 +114,13 @@ namespace DTO.DAO
                 db.SubmitChanges();
             }
         }
+
+        public List<Product> ListProductByCategory(int id)
+        {
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.Products.Select(x => x).Where(p => p.PCCode == id).ToList();
+            }
+        }
     }
 }

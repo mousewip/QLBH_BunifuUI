@@ -38,14 +38,6 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>E:\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -93,6 +85,12 @@
     </Compile>
     <Compile Include="form\childFrmDashboard.Designer.cs">
       <DependentUpon>childFrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\childFrmListBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\childFrmListBill.Designer.cs">
+      <DependentUpon>childFrmListBill.cs</DependentUpon>
     </Compile>
     <Compile Include="form\childFrmProduct.cs">
       <SubType>Form</SubType>
@@ -147,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\childFrmDashboard.resx">
       <DependentUpon>childFrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\childFrmListBill.resx">
+      <DependentUpon>childFrmListBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\childFrmProduct.resx">
       <DependentUpon>childFrmProduct.cs</DependentUpon>
