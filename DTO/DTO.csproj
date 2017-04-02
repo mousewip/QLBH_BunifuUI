@@ -49,6 +49,7 @@
     <Compile Include="DAO\BillDetailDAO.cs" />
     <Compile Include="DAO\ProductCategoryDAO.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
+    <Compile Include="DAO\RoleDao.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Model\ShopTPT.designer.cs">

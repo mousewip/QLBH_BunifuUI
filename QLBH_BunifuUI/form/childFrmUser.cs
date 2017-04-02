@@ -107,13 +107,14 @@ namespace QLBH_BunifuUI.form
         {
             int userID = (int)Session.Instance.Get("ID");
             
-            if (userID == int.Parse(txtUserID.Text.Trim()))
+            if (userID == int.Parse(txtUserID.Text.Trim()) || roleID == 1)
             {
                 btnUpdate.Visible = false;
                 btnCancel.Visible = true;
                 btnAccept.Visible = true;
                 btnChangePassword.Visible = true;
                 ChangeReadonlyInput(false);
+                btnCancel_Click(sender, e);
             }
             else
             {
@@ -177,8 +178,11 @@ namespace QLBH_BunifuUI.form
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            var user = new User();
-            user.UserID = int.Parse(txtUserID.Text.Trim());
+            
+            int uID = int.Parse(txtUserID.Text.Trim());
+            var user = UserDao.Instance.SelectSingleUserById(uID);
+           // user.UserID = int.Parse(txtUserID.Text.Trim());
+           
             user.FullName = txtFullName.Text.Trim();
             user.Email = txtEmail.Text.Trim();
             user.Gender = radioBtnNam.Checked;
@@ -187,9 +191,20 @@ namespace QLBH_BunifuUI.form
 
             if (!string.IsNullOrEmpty(txtCurrentPassword.Text) && !string.IsNullOrEmpty(txtNewPassword.Text))
             {
-                user.Password = Helper.Md5Encrypt(txtNewPassword.Text.Trim());
+                user.Password = txtNewPassword.Text.Trim();
+            }
+
+            if(UserDao.Instance.Update(user.UserID, user))
+            {
+                MessageBox.Show("Cập nhật thành công");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật không thành công");
             }
         }
+
+      
     }
 }
 

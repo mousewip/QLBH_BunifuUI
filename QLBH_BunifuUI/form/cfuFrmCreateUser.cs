@@ -11,6 +11,9 @@ namespace QLBH_BunifuUI.form
         public CfuFrmCreateUser()
         {
             InitializeComponent();
+            cbbRoles.DataSource = RoleDao.Instance.View();
+            cbbRoles.DisplayMember = "RoleName";
+            cbbRoles.ValueMember = "RoleID";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -34,8 +37,10 @@ namespace QLBH_BunifuUI.form
                 Email = txtEmail.Text.Trim(),
                 Gender = radioBtnNam.Checked ? true : false,
                 Address = txtAddress.Text.Trim(),
-                DayOfBirth = datePick.Value
-               // QUYEN = drdRoles.SelectedItem
+                DayOfBirth = datePick.Value,
+                RoleID = (int)cbbRoles.SelectedValue,
+                Phone = txtPhone.Text.Trim()
+                
             };
 
             var result = UserDao.Instance.Add(nv);

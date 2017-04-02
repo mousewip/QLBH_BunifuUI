@@ -45,7 +45,10 @@ namespace QLBH_BunifuUI.form
             this.txtConfirmPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelForm = new System.Windows.Forms.Panel();
             this.card = new Bunifu.Framework.UI.BunifuCards();
-            this.drdRoles = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.chkStatus = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cbbRoles = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -62,13 +65,10 @@ namespace QLBH_BunifuUI.form
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnHeader = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cfuCreateUserElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dragControlCfuCU = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.chkStatus = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelForm.SuspendLayout();
             this.card.SuspendLayout();
             this.panelMain.SuspendLayout();
@@ -300,7 +300,7 @@ namespace QLBH_BunifuUI.form
             this.card.Controls.Add(this.bunifuCustomLabel12);
             this.card.Controls.Add(this.chkStatus);
             this.card.Controls.Add(this.bunifuCustomLabel11);
-            this.card.Controls.Add(this.drdRoles);
+            this.card.Controls.Add(this.cbbRoles);
             this.card.Controls.Add(this.bunifuCustomLabel10);
             this.card.Controls.Add(this.txtName);
             this.card.Controls.Add(this.bunifuCustomLabel9);
@@ -333,15 +333,47 @@ namespace QLBH_BunifuUI.form
             this.card.Size = new System.Drawing.Size(700, 547);
             this.card.TabIndex = 0;
             // 
-            // drdRoles
+            // bunifuCustomLabel12
             // 
-            this.drdRoles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.drdRoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drdRoles.FormattingEnabled = true;
-            this.drdRoles.Location = new System.Drawing.Point(358, 284);
-            this.drdRoles.Name = "drdRoles";
-            this.drdRoles.Size = new System.Drawing.Size(121, 28);
-            this.drdRoles.TabIndex = 32;
+            this.bunifuCustomLabel12.AutoSize = true;
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(586, 55);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(75, 19);
+            this.bunifuCustomLabel12.TabIndex = 35;
+            this.bunifuCustomLabel12.Text = "Kích hoạt";
+            // 
+            // chkStatus
+            // 
+            this.chkStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chkStatus.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.chkStatus.Checked = true;
+            this.chkStatus.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chkStatus.ForeColor = System.Drawing.Color.White;
+            this.chkStatus.Location = new System.Drawing.Point(560, 55);
+            this.chkStatus.Name = "chkStatus";
+            this.chkStatus.Size = new System.Drawing.Size(20, 20);
+            this.chkStatus.TabIndex = 34;
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(534, 18);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(75, 19);
+            this.bunifuCustomLabel11.TabIndex = 33;
+            this.bunifuCustomLabel11.Text = "Trạng thái";
+            // 
+            // cbbRoles
+            // 
+            this.cbbRoles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbRoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbRoles.FormattingEnabled = true;
+            this.cbbRoles.Location = new System.Drawing.Point(358, 284);
+            this.cbbRoles.Name = "cbbRoles";
+            this.cbbRoles.Size = new System.Drawing.Size(121, 28);
+            this.cbbRoles.TabIndex = 32;
             // 
             // bunifuCustomLabel10
             // 
@@ -535,6 +567,20 @@ namespace QLBH_BunifuUI.form
             this.panel2.Size = new System.Drawing.Size(700, 47);
             this.panel2.TabIndex = 0;
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(667, 5);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(27, 27);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 2;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // btnHeader
             // 
             this.btnHeader.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -582,52 +628,6 @@ namespace QLBH_BunifuUI.form
             this.dragControlCfuCU.Horizontal = true;
             this.dragControlCfuCU.TargetControl = this.panel2;
             this.dragControlCfuCU.Vertical = true;
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(667, 5);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(27, 27);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 2;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // bunifuCustomLabel11
-            // 
-            this.bunifuCustomLabel11.AutoSize = true;
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(534, 18);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(75, 19);
-            this.bunifuCustomLabel11.TabIndex = 33;
-            this.bunifuCustomLabel11.Text = "Trạng thái";
-            // 
-            // chkStatus
-            // 
-            this.chkStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chkStatus.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.chkStatus.Checked = true;
-            this.chkStatus.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chkStatus.ForeColor = System.Drawing.Color.White;
-            this.chkStatus.Location = new System.Drawing.Point(560, 55);
-            this.chkStatus.Name = "chkStatus";
-            this.chkStatus.Size = new System.Drawing.Size(20, 20);
-            this.chkStatus.TabIndex = 34;
-            // 
-            // bunifuCustomLabel12
-            // 
-            this.bunifuCustomLabel12.AutoSize = true;
-            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(586, 55);
-            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(75, 19);
-            this.bunifuCustomLabel12.TabIndex = 35;
-            this.bunifuCustomLabel12.Text = "Kích hoạt";
             // 
             // CfuFrmCreateUser
             // 
@@ -683,7 +683,7 @@ namespace QLBH_BunifuUI.form
         private BunifuCustomLabel bunifuCustomLabel10;
         private BunifuMaterialTextbox txtName;
         private BunifuCustomLabel bunifuCustomLabel9;
-        private ComboBox drdRoles;
+        private ComboBox cbbRoles;
         private BunifuImageButton bunifuImageButton1;
         private BunifuCustomLabel bunifuCustomLabel12;
         private BunifuCheckbox chkStatus;
