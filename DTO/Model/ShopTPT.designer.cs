@@ -141,8 +141,6 @@ namespace DTO.Model
 		
 		private System.Nullable<System.DateTime> _CreateDate;
 		
-		private System.Nullable<double> _TotalAmount;
-		
 		private EntitySet<BillDetail> _BillDetails;
 		
 		private EntityRef<User> _User;
@@ -157,8 +155,6 @@ namespace DTO.Model
     partial void OnUserCodeChanged();
     partial void OnCreateDateChanging(System.Nullable<System.DateTime> value);
     partial void OnCreateDateChanged();
-    partial void OnTotalAmountChanging(System.Nullable<double> value);
-    partial void OnTotalAmountChanged();
     #endregion
 		
 		public Bill()
@@ -228,26 +224,6 @@ namespace DTO.Model
 					this._CreateDate = value;
 					this.SendPropertyChanged("CreateDate");
 					this.OnCreateDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TotalAmount", DbType="Float")]
-		public System.Nullable<double> TotalAmount
-		{
-			get
-			{
-				return this._TotalAmount;
-			}
-			set
-			{
-				if ((this._TotalAmount != value))
-				{
-					this.OnTotalAmountChanging(value);
-					this.SendPropertyChanging();
-					this._TotalAmount = value;
-					this.SendPropertyChanged("TotalAmount");
-					this.OnTotalAmountChanged();
 				}
 			}
 		}

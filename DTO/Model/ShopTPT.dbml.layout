@@ -2,10 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.375" name="ShopTPT">
   <DataContextMoniker Name="/ShopTPTDataContext" />
   <nestedChildShapes>
-    <classShape Id="5d8d5b08-adea-49ce-a069-69318a338d12" absoluteBounds="3.5, 5.625, 2, 1.5785953776041666">
+    <classShape Id="5d8d5b08-adea-49ce-a069-69318a338d12" absoluteBounds="3.5, 5.625, 2, 1.3862939453124996">
       <DataClassMoniker Name="/ShopTPTDataContext/Bill" />
       <nestedChildShapes>
-        <elementListCompartment Id="d7a22399-fabd-44d6-957d-86321bbd13b1" absoluteBounds="3.515, 6.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d7a22399-fabd-44d6-957d-86321bbd13b1" absoluteBounds="3.515, 6.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="930f9631-8796-4620-8501-6c17dc6f4045" absoluteBounds="0.75, 5.125, 2, 2.7324039713541666">
@@ -38,35 +38,35 @@
         <elementListCompartment Id="b28c0ec9-b130-4a76-9e9e-f67fb7d1cbad" absoluteBounds="1.5150000000000001, 9.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 6.41429768880208); (3.5 : 6.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 6.31814697265625); (3.5 : 6.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/ShopTPTDataContext/User/User_Bill" />
       <nodes>
         <classShapeMoniker Id="930f9631-8796-4620-8501-6c17dc6f4045" />
         <classShapeMoniker Id="5d8d5b08-adea-49ce-a069-69318a338d12" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 6.41429768880208); (7.25 : 6.41429768880208); (7.25 : 3.20359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 6.31814697265625); (7.25 : 6.31814697265625); (7.25 : 3.20359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/ShopTPTDataContext/Bill/Bill_BillDetail" />
       <nodes>
         <classShapeMoniker Id="5d8d5b08-adea-49ce-a069-69318a338d12" />
         <classShapeMoniker Id="45321e8b-566e-43b2-a889-2a64663d01e3" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 2.41429768880208); (6.25 : 2.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 2.41429768880208); (6.25 : 2.41429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ShopTPTDataContext/Product/Product_BillDetail" />
       <nodes>
         <classShapeMoniker Id="6848d008-f01c-4726-a061-be63d4e1916d" />
         <classShapeMoniker Id="45321e8b-566e-43b2-a889-2a64663d01e3" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 2.47199625651042); (3.5 : 2.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.47199625651042); (3.5 : 2.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ShopTPTDataContext/ProductCategory/ProductCategory_Product" />
       <nodes>
         <classShapeMoniker Id="c30dc0e8-b388-4495-bca8-7a6b1ad5716a" />
         <classShapeMoniker Id="6848d008-f01c-4726-a061-be63d4e1916d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.125 : 8.875); (2.125 : 7.85740397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.125 : 8.875); (2.125 : 7.85740397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ShopTPTDataContext/Role/Role_User" />
       <nodes>
         <classShapeMoniker Id="ac968cc5-905c-45d6-9b44-cb2e7a3a878a" />

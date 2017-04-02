@@ -1,5 +1,6 @@
 ﻿using DTO.DAO;
 using DTO.Model;
+using QLBH_BunifuUI.Common;
 using System.Windows.Forms;
 
 namespace QLBH_BunifuUI.form
@@ -48,6 +49,10 @@ namespace QLBH_BunifuUI.form
         {
             int idProduct = (cbbProduct.SelectedItem as Product).ProductID;
             int quantity = (int)nmQuantity.Value;
+
+            Bill bill = new Bill();
+            bill.UserCode = (int)Session.Instance.Get("ID");
+            if()
 
         }
 

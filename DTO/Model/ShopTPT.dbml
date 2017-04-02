@@ -5,7 +5,6 @@
       <Column Name="BillID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="UserCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="Bill_BillDetail" Member="BillDetails" ThisKey="BillID" OtherKey="BillID" Type="BillDetail" />
       <Association Name="User_Bill" Member="User" ThisKey="UserCode" OtherKey="UserID" Type="User" IsForeignKey="true" />
     </Type>

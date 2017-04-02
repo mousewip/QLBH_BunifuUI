@@ -56,7 +56,6 @@ namespace DTO.DAO
                 {
                     tmp.BillID = bill.BillID;
                     tmp.CreateDate = bill.CreateDate;
-                    tmp.TotalAmount = bill.TotalAmount;
                     tmp.UserCode = bill.UserCode;
                    
                     try
