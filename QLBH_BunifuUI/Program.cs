@@ -15,21 +15,9 @@ namespace QLBH_BunifuUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoadAllForm();
             Application.Run(new FrmLogin());
         }
 
-        private static void LoadAllForm()
-        {
-            Splash.frmMain = new FrmMain();
-            Splash.cfd = new ChildFrmDashboard();
-            Splash.cfb = new ChildFrmBill();
-            Splash.cfp = new ChildFrmProduct();
-            Splash.cfpc = new ChildFrmProductCategory();
-            Splash.cfu = new ChildFrmUser();
-            Splash.cfa = new ChildFrmAbout();
-            Splash.cfs = new ChildFrmSetting();
-            Splash.CfuCreateUser = new CfuFrmCreateUser();
-        }
+       
     }
 }

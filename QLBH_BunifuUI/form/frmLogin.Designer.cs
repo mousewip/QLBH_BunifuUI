@@ -49,7 +49,6 @@ namespace QLBH_BunifuUI.form
             this.bunifuDragControlFRMLogin = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer_Loader = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.rtb = new System.Windows.Forms.RichTextBox();
             this.panelLogin.SuspendLayout();
             this.panelSQLServer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -62,7 +61,6 @@ namespace QLBH_BunifuUI.form
             // 
             this.panelLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogin.BackgroundImage")));
             this.panelLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogin.Controls.Add(this.rtb);
             this.panelLogin.Controls.Add(this.panelSQLServer);
             this.panelLogin.Controls.Add(this.btnExit);
             this.panelLogin.Controls.Add(this.imageFrmLogin);
@@ -292,14 +290,6 @@ namespace QLBH_BunifuUI.form
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // rtb
-            // 
-            this.rtb.Location = new System.Drawing.Point(93, 24);
-            this.rtb.Name = "rtb";
-            this.rtb.Size = new System.Drawing.Size(267, 90);
-            this.rtb.TabIndex = 18;
-            this.rtb.Text = "";
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +327,5 @@ namespace QLBH_BunifuUI.form
         private Timer timer_Loader;
         private ImageList imageList1;
         private ComboBox cbbSqlServer;
-        private RichTextBox rtb;
     }
 }

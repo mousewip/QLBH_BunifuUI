@@ -62,12 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\ProductCustom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Common\ProductCustom.Designer.cs">
-      <DependentUpon>ProductCustom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Common\Session.cs" />
     <Compile Include="Common\Splash.cs" />
     <Compile Include="form\cfpFrmCreateProduct.cs">

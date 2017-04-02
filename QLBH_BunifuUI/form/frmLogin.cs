@@ -4,6 +4,7 @@ using DTO;
 using DTO.DAO;
 using QLBH_BunifuUI.Common;
 using QLBH_BunifuUI.SQL;
+using System.Threading;
 
 namespace QLBH_BunifuUI.form
 {
@@ -12,7 +13,7 @@ namespace QLBH_BunifuUI.form
         public FrmLogin()
         {
             InitializeComponent();
-            Process(); //213123
+            Process();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -27,22 +28,34 @@ namespace QLBH_BunifuUI.form
 
         private void Login()
         {
+            
             string SQLInstance;
             if (cbbSqlServer.SelectedValue == null)
                 SQLInstance = cbbSqlServer.Text.Trim();
             else
             {
-                SQLInstance = cbbSqlServer.SelectedValue.ToString();
+                SQLInstance = cbbSqlServer.Text.Trim();
+                SQLInstance += cbbSqlServer.SelectedValue.ToString();
             }
+
+            SQLInstance = "LIVINGROOM-PC";
+
             DTO.Properties.Settings.Default.ShopTPTConnectionString =
-                    "Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+                    "Data Source=" + SQLInstance + ";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
                     "a;Password=tpt";
-            if (Helper.IsServerConnected("Data Source=" + SQLInstance + ";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
-                "a;Password=tpt"))
+            //rtb.Text = DTO.Properties.Settings.Default.ShopTPTConnectionString;
+            if (Helper.IsServerConnected(DTO.Properties.Settings.Default.ShopTPTConnectionString))
             {
-                int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
-                if (result == 1)
+                var user = UserDao.Instance.FindSingleUser(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
+                if (user != null)
                 {
+                    Session.Instance.Add("ID", user.UserID);
+                    Session.Instance.Add("RoleID", user.RoleID);
+                    Session.Instance.Add("Password", user.Password);
+                    Thread LoadFormThread = new Thread(new ThreadStart(LoadAllForm));
+                    LoadFormThread.Start();
+                    LoadFormThread.Join();
+                    //LoadAllForm();
                     Hide();
                     Splash.frmMain.ShowDialog();
                     Show();
@@ -61,16 +74,7 @@ namespace QLBH_BunifuUI.form
 
         private int CheckLogin(string userName, string pass)
         {
-            try
-            {
-                return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? 1 : 0;
-            }
-            catch (Exception)
-            {
-                return -1;
-            }
-            // return false;
-            //return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? true : false;
+            return UserDao.Instance.FindSingleUser(userName, pass) == null ? 0 : 1;
         }
 
         private void Process()
@@ -78,12 +82,11 @@ namespace QLBH_BunifuUI.form
             // Retrieve the enumerator instance and then the data.  
             // var instance = SqlDataSourceEnumerator.Instance;
             var table = FindSqlServerName.GetAllSqlServerName();
-            string resul = "";
             cbbSqlServer.DataSource = table;
 
 
             cbbSqlServer.DisplayMember = "ServerName";
-            cbbSqlServer.ValueMember = "ServerName";
+            cbbSqlServer.ValueMember = "InstanceName";
         }
         private void txtUsername_KeyDown(object sender, KeyEventArgs e)
         {
@@ -104,7 +107,25 @@ namespace QLBH_BunifuUI.form
 
         private void cbbSqlServer_DropDown(object sender, EventArgs e)
         {
+            cbbSqlServer.UseWaitCursor = true;
+            cbbSqlServer.Cursor = Cursors.WaitCursor;
             Process();
+            cbbSqlServer.UseWaitCursor = false;
+            cbbSqlServer.Cursor = Cursors.Default;
+        }
+
+
+        private void LoadAllForm()
+        {
+            Splash.frmMain = new FrmMain();
+            Splash.cfd = new ChildFrmDashboard();
+            Splash.cfb = new ChildFrmBill();
+            Splash.cfp = new ChildFrmProduct();
+            Splash.cfpc = new ChildFrmProductCategory();
+            Splash.cfu = new ChildFrmUser();
+            Splash.cfa = new ChildFrmAbout();
+            Splash.cfs = new ChildFrmSetting();
+            Splash.CfuCreateUser = new CfuFrmCreateUser();
         }
     }
 }

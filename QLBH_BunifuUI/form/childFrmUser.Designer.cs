@@ -33,12 +33,12 @@ namespace QLBH_BunifuUI.form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChildFrmUser));
             this.childFrmUserElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelControl = new System.Windows.Forms.Panel();
@@ -71,9 +71,9 @@ namespace QLBH_BunifuUI.form
             this.lblPass = new System.Windows.Forms.Label();
             this.txtCurrentPassword = new System.Windows.Forms.TextBox();
             this.btnChangePassword = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.radioBtnNam = new System.Windows.Forms.RadioButton();
             this.radioBtnNu = new System.Windows.Forms.RadioButton();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteUser)).BeginInit();
@@ -192,37 +192,37 @@ namespace QLBH_BunifuUI.form
             this.dtgvUser2.AllowUserToOrderColumns = true;
             this.dtgvUser2.AllowUserToResizeColumns = false;
             this.dtgvUser2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.dtgvUser2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.dtgvUser2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgvUser2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.dtgvUser2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvUser2.BackgroundColor = System.Drawing.Color.White;
             this.dtgvUser2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvUser2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvUser2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvUser2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgvUser2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvUser2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.manv,
             this.tenNV,
             this.tk});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.YellowGreen;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvUser2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.YellowGreen;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvUser2.DefaultCellStyle = dataGridViewCellStyle10;
             this.dtgvUser2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvUser2.DoubleBuffered = true;
             this.dtgvUser2.EnableHeadersVisualStyles = false;
@@ -233,18 +233,18 @@ namespace QLBH_BunifuUI.form
             this.dtgvUser2.Name = "dtgvUser2";
             this.dtgvUser2.ReadOnly = true;
             this.dtgvUser2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvUser2.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvUser2.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dtgvUser2.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.dtgvUser2.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.dtgvUser2.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvUser2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgvUser2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvUser2.ShowEditingIcon = false;
@@ -255,7 +255,7 @@ namespace QLBH_BunifuUI.form
             // manv
             // 
             this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.manv.DataPropertyName = "UserCode";
+            this.manv.DataPropertyName = "UserID";
             this.manv.FillWeight = 6F;
             this.manv.HeaderText = "ID";
             this.manv.Name = "manv";
@@ -267,8 +267,8 @@ namespace QLBH_BunifuUI.form
             // 
             this.tenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.tenNV.DataPropertyName = "FullName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.tenNV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.tenNV.DefaultCellStyle = dataGridViewCellStyle9;
             this.tenNV.FillWeight = 11.52756F;
             this.tenNV.HeaderText = "Họ Tên";
             this.tenNV.Name = "tenNV";
@@ -355,6 +355,7 @@ namespace QLBH_BunifuUI.form
             this.btnAccept.Textcolor = System.Drawing.Color.White;
             this.btnAccept.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept.Visible = false;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // btnUpdate
             // 
@@ -581,17 +582,6 @@ namespace QLBH_BunifuUI.form
             this.btnChangePassword.Visible = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
-            // txtAddress
-            // 
-            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(619, 293);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(263, 62);
-            this.txtAddress.TabIndex = 6;
-            this.txtAddress.Text = "";
-            // 
             // radioBtnNam
             // 
             this.radioBtnNam.AutoSize = true;
@@ -616,14 +606,25 @@ namespace QLBH_BunifuUI.form
             this.radioBtnNu.Text = "Nữ";
             this.radioBtnNu.UseVisualStyleBackColor = true;
             // 
+            // txtAddress
+            // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(619, 290);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.ReadOnly = true;
+            this.txtAddress.Size = new System.Drawing.Size(263, 63);
+            this.txtAddress.TabIndex = 43;
+            // 
             // ChildFrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 665);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.radioBtnNu);
             this.Controls.Add(this.radioBtnNam);
-            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblNewPass);
             this.Controls.Add(this.txtNewPassword);
@@ -671,9 +672,6 @@ namespace QLBH_BunifuUI.form
         private BunifuImageButton btnRefresh;
         private ToolTip toolTipFrmUser;
         private BunifuMetroTextbox txtSearch;
-        private DataGridViewTextBoxColumn manv;
-        private DataGridViewTextBoxColumn tenNV;
-        private DataGridViewTextBoxColumn tk;
         private BunifuFlatButton btnCancel;
         private BunifuFlatButton btnAccept;
         private BunifuFlatButton btnUpdate;
@@ -692,8 +690,11 @@ namespace QLBH_BunifuUI.form
         private TextBox txtNewPassword;
         private Label lblPass;
         private TextBox txtCurrentPassword;
-        private RichTextBox txtAddress;
         private RadioButton radioBtnNu;
         private RadioButton radioBtnNam;
+        private DataGridViewTextBoxColumn manv;
+        private DataGridViewTextBoxColumn tenNV;
+        private DataGridViewTextBoxColumn tk;
+        private TextBox txtAddress;
     }
 }
