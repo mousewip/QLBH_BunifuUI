@@ -130,11 +130,11 @@ namespace DTO.DAO
             return lUser;
         }
 
-        public User SelectSingleUserById(string id)
+        public User SelectSingleUserById(int id)
         {
             using (var db = new ShopTPTDataContext())
             {
-                return db.Users.SingleOrDefault(x => x.UserID == int.Parse(id));
+                return db.Users.SingleOrDefault(x => x.UserID == id);
             }
         }
     }

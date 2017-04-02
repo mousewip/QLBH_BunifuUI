@@ -65,7 +65,7 @@ namespace QLBH_BunifuUI.form
         {
             try
             {
-                return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? 1 : 0;
+                return UserDao.Instance.FindSingleUser(userName, pass) != 1 ? 1 : 0;
             }
             catch (Exception)
             {

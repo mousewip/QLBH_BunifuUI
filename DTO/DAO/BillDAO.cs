@@ -58,7 +58,7 @@ namespace DTO.DAO
                     tmp.CreateDate = bill.CreateDate;
                     tmp.TotalAmount = bill.TotalAmount;
                     tmp.UserCode = bill.UserCode;
-                    tmp.CustomerName = bill.CustomerName;
+                   
                     try
                     {
                         db.SubmitChanges();

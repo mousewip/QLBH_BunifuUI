@@ -13,7 +13,7 @@ namespace DTO.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "12.0.0.0")]
-    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -26,32 +26,15 @@ namespace DTO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
-            "a;Password=tpt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;Persist Security Info=True;User" +
+            " ID=sa;Password=tpt")]
         public string ShopTPTConnectionString {
             get {
                 return ((string)(this["ShopTPTConnectionString"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;Persist Security Info=True;User" +
-            " ID=sa;Password=tpt")]
-        public string ShopTPTConnectionString1 {
-            get {
-                return ((string)(this["ShopTPTConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;User ID=sa;Password=tpt")]
-        public string ShopTPTConnectionString2 {
-            get {
-                return ((string)(this["ShopTPTConnectionString2"]));
+            set
+            {
+                this["ShopTPTConnectionString"] = value;
             }
         }
     }

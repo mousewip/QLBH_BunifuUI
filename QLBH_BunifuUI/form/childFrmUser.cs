@@ -125,7 +125,7 @@ namespace QLBH_BunifuUI.form
             else
             {
                 int index = e.RowIndex;
-                User user = UserDao.Instance.SelectSingleUserById(dtgvUser2.Rows[index].Cells[0].Value.ToString());
+                User user = UserDao.Instance.SelectSingleUserById((int)dtgvUser2.Rows[index].Cells[0].Value);
                 SetInfo(user);
             }
         }

@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ShopTPT" Class="ShopTPTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;User ID=sa" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="ShopTPTConnectionString2" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=sa" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="ShopTPTConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bill" Member="Bills">
+    <Type Name="Bill">
+      <Column Name="BillID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Bill_BillDetail" Member="BillDetails" ThisKey="BillID" OtherKey="BillID" Type="BillDetail" />
+      <Association Name="User_Bill" Member="User" ThisKey="UserCode" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.[User]" Member="Users">
     <Type Name="User">
       <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -14,17 +24,6 @@
       <Column Name="RoleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="User_Bill" Member="Bills" ThisKey="UserID" OtherKey="UserCode" Type="Bill" />
       <Association Name="Role_User" Member="Role" ThisKey="RoleID" OtherKey="RoleID" Type="Role" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Bill" Member="Bills">
-    <Type Name="Bill">
-      <Column Name="BillID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="UserCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CustomerName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="CreateDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="TotalAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Association Name="Bill_BillDetail" Member="BillDetails" ThisKey="BillID" OtherKey="BillID" Type="BillDetail" />
-      <Association Name="User_Bill" Member="User" ThisKey="UserCode" OtherKey="UserID" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.BillDetail" Member="BillDetails">
@@ -49,7 +48,7 @@
       <Column Name="Size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Trademark" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Image" Type="System.Byte[]" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="Product_BillDetail" Member="BillDetails" ThisKey="ProductID" OtherKey="ProductID" Type="BillDetail" />
       <Association Name="ProductCategory_Product" Member="ProductCategory" ThisKey="PCCode" OtherKey="PCCode" Type="ProductCategory" IsForeignKey="true" />
     </Type>
