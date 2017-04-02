@@ -135,7 +135,7 @@ namespace DTO.Model
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _BillCode;
+		private int _BillID;
 		
 		private System.Nullable<int> _UserCode;
 		
@@ -153,8 +153,8 @@ namespace DTO.Model
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnBillCodeChanging(int value);
-    partial void OnBillCodeChanged();
+    partial void OnBillIDChanging(int value);
+    partial void OnBillIDChanged();
     partial void OnUserCodeChanging(System.Nullable<int> value);
     partial void OnUserCodeChanged();
     partial void OnCustomerNameChanging(string value);
@@ -172,22 +172,22 @@ namespace DTO.Model
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BillCode", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int BillCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BillID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int BillID
 		{
 			get
 			{
-				return this._BillCode;
+				return this._BillID;
 			}
 			set
 			{
-				if ((this._BillCode != value))
+				if ((this._BillID != value))
 				{
-					this.OnBillCodeChanging(value);
+					this.OnBillIDChanging(value);
 					this.SendPropertyChanging();
-					this._BillCode = value;
-					this.SendPropertyChanged("BillCode");
-					this.OnBillCodeChanged();
+					this._BillID = value;
+					this.SendPropertyChanged("BillID");
+					this.OnBillIDChanged();
 				}
 			}
 		}
@@ -276,7 +276,7 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Bill_BillDetail", Storage="_BillDetails", ThisKey="BillCode", OtherKey="BillCode")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Bill_BillDetail", Storage="_BillDetails", ThisKey="BillID", OtherKey="BillID")]
 		public EntitySet<BillDetail> BillDetails
 		{
 			get
@@ -289,7 +289,7 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="User_Bill", Storage="_User", ThisKey="UserCode", OtherKey="UserCode", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="User_Bill", Storage="_User", ThisKey="UserCode", OtherKey="UserID", IsForeignKey=true)]
 		public User User
 		{
 			get
@@ -312,7 +312,7 @@ namespace DTO.Model
 					if ((value != null))
 					{
 						value.Bills.Add(this);
-						this._UserCode = value.UserCode;
+						this._UserCode = value.UserID;
 					}
 					else
 					{
@@ -362,7 +362,7 @@ namespace DTO.Model
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _UserCode;
+		private int _UserID;
 		
 		private string _UserName;
 		
@@ -390,8 +390,8 @@ namespace DTO.Model
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnUserCodeChanging(int value);
-    partial void OnUserCodeChanged();
+    partial void OnUserIDChanging(int value);
+    partial void OnUserIDChanged();
     partial void OnUserNameChanging(string value);
     partial void OnUserNameChanged();
     partial void OnPasswordChanging(string value);
@@ -419,22 +419,22 @@ namespace DTO.Model
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserCode", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int UserCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int UserID
 		{
 			get
 			{
-				return this._UserCode;
+				return this._UserID;
 			}
 			set
 			{
-				if ((this._UserCode != value))
+				if ((this._UserID != value))
 				{
-					this.OnUserCodeChanging(value);
+					this.OnUserIDChanging(value);
 					this.SendPropertyChanging();
-					this._UserCode = value;
-					this.SendPropertyChanged("UserCode");
-					this.OnUserCodeChanged();
+					this._UserID = value;
+					this.SendPropertyChanged("UserID");
+					this.OnUserIDChanged();
 				}
 			}
 		}
@@ -623,7 +623,7 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="User_Bill", Storage="_Bills", ThisKey="UserCode", OtherKey="UserCode")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="User_Bill", Storage="_Bills", ThisKey="UserID", OtherKey="UserCode")]
 		public EntitySet<Bill> Bills
 		{
 			get
@@ -709,9 +709,9 @@ namespace DTO.Model
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _BillCode;
+		private int _BillID;
 		
-		private string _ProductCode;
+		private int _ProductID;
 		
 		private System.Nullable<int> _Quantity;
 		
@@ -725,10 +725,10 @@ namespace DTO.Model
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnBillCodeChanging(int value);
-    partial void OnBillCodeChanged();
-    partial void OnProductCodeChanging(string value);
-    partial void OnProductCodeChanged();
+    partial void OnBillIDChanging(int value);
+    partial void OnBillIDChanged();
+    partial void OnProductIDChanging(int value);
+    partial void OnProductIDChanged();
     partial void OnQuantityChanging(System.Nullable<int> value);
     partial void OnQuantityChanged();
     partial void OnTotalChanging(System.Nullable<double> value);
@@ -742,50 +742,50 @@ namespace DTO.Model
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BillCode", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int BillCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BillID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int BillID
 		{
 			get
 			{
-				return this._BillCode;
+				return this._BillID;
 			}
 			set
 			{
-				if ((this._BillCode != value))
+				if ((this._BillID != value))
 				{
 					if (this._Bill.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnBillCodeChanging(value);
+					this.OnBillIDChanging(value);
 					this.SendPropertyChanging();
-					this._BillCode = value;
-					this.SendPropertyChanged("BillCode");
-					this.OnBillCodeChanged();
+					this._BillID = value;
+					this.SendPropertyChanged("BillID");
+					this.OnBillIDChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string ProductCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int ProductID
 		{
 			get
 			{
-				return this._ProductCode;
+				return this._ProductID;
 			}
 			set
 			{
-				if ((this._ProductCode != value))
+				if ((this._ProductID != value))
 				{
 					if (this._Product.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnProductCodeChanging(value);
+					this.OnProductIDChanging(value);
 					this.SendPropertyChanging();
-					this._ProductCode = value;
-					this.SendPropertyChanged("ProductCode");
-					this.OnProductCodeChanged();
+					this._ProductID = value;
+					this.SendPropertyChanged("ProductID");
+					this.OnProductIDChanged();
 				}
 			}
 		}
@@ -830,7 +830,7 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Bill_BillDetail", Storage="_Bill", ThisKey="BillCode", OtherKey="BillCode", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Bill_BillDetail", Storage="_Bill", ThisKey="BillID", OtherKey="BillID", IsForeignKey=true)]
 		public Bill Bill
 		{
 			get
@@ -853,18 +853,18 @@ namespace DTO.Model
 					if ((value != null))
 					{
 						value.BillDetails.Add(this);
-						this._BillCode = value.BillCode;
+						this._BillID = value.BillID;
 					}
 					else
 					{
-						this._BillCode = default(int);
+						this._BillID = default(int);
 					}
 					this.SendPropertyChanged("Bill");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_BillDetail", Storage="_Product", ThisKey="ProductCode", OtherKey="ProductCode", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_BillDetail", Storage="_Product", ThisKey="ProductID", OtherKey="ProductID", IsForeignKey=true)]
 		public Product Product
 		{
 			get
@@ -887,11 +887,11 @@ namespace DTO.Model
 					if ((value != null))
 					{
 						value.BillDetails.Add(this);
-						this._ProductCode = value.ProductCode;
+						this._ProductID = value.ProductID;
 					}
 					else
 					{
-						this._ProductCode = default(string);
+						this._ProductID = default(int);
 					}
 					this.SendPropertyChanged("Product");
 				}
@@ -925,6 +925,8 @@ namespace DTO.Model
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+		private int _ProductID;
+		
 		private string _ProductCode;
 		
 		private System.Nullable<int> _PCCode;
@@ -941,9 +943,9 @@ namespace DTO.Model
 		
 		private string _Trademark;
 		
-		private byte[] _Image;
-		
 		private System.Nullable<double> _Discount;
+		
+		private byte[] _Image;
 		
 		private EntitySet<BillDetail> _BillDetails;
 		
@@ -953,6 +955,8 @@ namespace DTO.Model
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+    partial void OnProductIDChanging(int value);
+    partial void OnProductIDChanged();
     partial void OnProductCodeChanging(string value);
     partial void OnProductCodeChanged();
     partial void OnPCCodeChanging(System.Nullable<int> value);
@@ -969,10 +973,10 @@ namespace DTO.Model
     partial void OnSizeChanged();
     partial void OnTrademarkChanging(string value);
     partial void OnTrademarkChanged();
-    partial void OnImageChanging(byte[] value);
-    partial void OnImageChanged();
     partial void OnDiscountChanging(System.Nullable<double> value);
     partial void OnDiscountChanged();
+    partial void OnImageChanging(byte[] value);
+    partial void OnImageChanged();
     #endregion
 		
 		public Product()
@@ -982,7 +986,27 @@ namespace DTO.Model
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ProductID
+		{
+			get
+			{
+				return this._ProductID;
+			}
+			set
+			{
+				if ((this._ProductID != value))
+				{
+					this.OnProductIDChanging(value);
+					this.SendPropertyChanging();
+					this._ProductID = value;
+					this.SendPropertyChanged("ProductID");
+					this.OnProductIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string ProductCode
 		{
 			get
@@ -1146,26 +1170,6 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Image", DbType="Image", UpdateCheck=UpdateCheck.Never)]
-		public byte[] Image
-		{
-			get
-			{
-				return this._Image;
-			}
-			set
-			{
-				if ((this._Image != value))
-				{
-					this.OnImageChanging(value);
-					this.SendPropertyChanging();
-					this._Image = value;
-					this.SendPropertyChanged("Image");
-					this.OnImageChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Discount", DbType="Float")]
 		public System.Nullable<double> Discount
 		{
@@ -1186,7 +1190,27 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_BillDetail", Storage="_BillDetails", ThisKey="ProductCode", OtherKey="ProductCode")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Image", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public byte[] Image
+		{
+			get
+			{
+				return this._Image;
+			}
+			set
+			{
+				if ((this._Image != value))
+				{
+					this.OnImageChanging(value);
+					this.SendPropertyChanging();
+					this._Image = value;
+					this.SendPropertyChanged("Image");
+					this.OnImageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Product_BillDetail", Storage="_BillDetails", ThisKey="ProductID", OtherKey="ProductID")]
 		public EntitySet<BillDetail> BillDetails
 		{
 			get
@@ -1408,7 +1432,7 @@ namespace DTO.Model
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoleID", DbType="Int NOT NULL", IsPrimaryKey=true)]
 		public int RoleID
 		{
 			get

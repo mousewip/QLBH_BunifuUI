@@ -37,7 +37,7 @@ namespace QLBH_BunifuUI.form
             DTO.Properties.Settings.Default.ShopTPTConnectionString =
                     "Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
                     "a;Password=tpt";
-            if (Helper.IsServerConnected("Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+            if (Helper.IsServerConnected("Data Source=" + SQLInstance + ";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
                 "a;Password=tpt"))
             {
                 int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));

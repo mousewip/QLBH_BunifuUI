@@ -26,8 +26,8 @@ namespace DTO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MOUSEWIP\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;" +
-            "User ID=sa;Password=tpt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+            "a;Password=tpt")]
         public string ShopTPTConnectionString {
             get {
                 return ((string)(this["ShopTPTConnectionString"]));

@@ -46,12 +46,12 @@ namespace DTO.DAO
             }
         }
 
-        public bool Delete(int bID, string pID)
+        public bool Delete(int bID, int pID)
         {
             using (var db = new ShopTPTDataContext())
             {
                 var tmp =
-                    db.BillDetails.SingleOrDefault(x => x.BillCode == bID && x.ProductCode == pID);
+                    db.BillDetails.SingleOrDefault(x => x.BillID == bID && x.ProductID == pID);
                 if (tmp != null)
                 {
                     db.BillDetails.DeleteOnSubmit(tmp);
@@ -77,11 +77,11 @@ namespace DTO.DAO
             using (var db = new ShopTPTDataContext())
             {
                 var tmp =
-                    db.BillDetails.SingleOrDefault(x => x.BillCode == bd.BillCode && x.ProductCode == bd.ProductCode);
+                    db.BillDetails.SingleOrDefault(x => x.BillID == bd.BillID && x.ProductID == bd.ProductID);
                 if (tmp != null)
                 {
-                    tmp.BillCode = bd.BillCode;
-                    tmp.ProductCode = bd.ProductCode;
+                    tmp.BillID = bd.BillID;
+                    tmp.ProductID = bd.ProductID;
                     tmp.Quantity = bd.Quantity;
                     tmp.Total = bd.Total;
                     try

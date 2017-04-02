@@ -132,7 +132,7 @@ namespace QLBH_BunifuUI.form
 
         private void SetInfo(User user)
         {
-            txtUserID.Text = user.UserCode.ToString();
+            txtUserID.Text = user.UserID.ToString();
             txtFullName.Text = user.FullName;
             txtAddress.Text = user.Address;
             radioBtnNam.Checked = user.Gender == true ? true : false;

@@ -38,10 +38,10 @@ namespace DTO.DAO
         {
             using (var db = new ShopTPTDataContext())
             {
-                var user = db.Users.SingleOrDefault(x => x.UserCode == maNv);
+                var user = db.Users.SingleOrDefault(x => x.UserID == maNv);
                 if (user != null)
                 {
-                    user.UserCode = nv.UserCode;
+                    user.UserID = nv.UserID;
                     user.Address = nv.Address;
                     user.DayOfBirth = nv.DayOfBirth;
                     user.Email = nv.Email;
@@ -88,7 +88,7 @@ namespace DTO.DAO
         {
             using (var db = new ShopTPTDataContext())
             {
-                var user = db.Users.SingleOrDefault(x => x.UserCode == id);
+                var user = db.Users.SingleOrDefault(x => x.UserID == id);
                 if (user != null) db.Users.DeleteOnSubmit(user);
                 db.SubmitChanges();
             }
@@ -102,7 +102,7 @@ namespace DTO.DAO
                 var user = db.Users.SingleOrDefault(x => x.UserName == userName && x.Password == password);
                 if (user != null)
                 {
-                    return user.UserCode;
+                    return user.UserID;
                 }
             }
             return 0;
@@ -125,7 +125,7 @@ namespace DTO.DAO
             {
                 lUser =
                     db.Users.Select(x => x)
-                        .Where(p => p.UserCode == userId || p.FullName.Contains(strFind) || p.UserName.Contains(strFind)).ToList();
+                        .Where(p => p.UserID == userId || p.FullName.Contains(strFind) || p.UserName.Contains(strFind)).ToList();
             }
             return lUser;
         }
@@ -134,7 +134,7 @@ namespace DTO.DAO
         {
             using (var db = new ShopTPTDataContext())
             {
-                return db.Users.SingleOrDefault(x => x.UserCode == int.Parse(id));
+                return db.Users.SingleOrDefault(x => x.UserID == int.Parse(id));
             }
         }
     }

@@ -51,10 +51,10 @@ namespace DTO.DAO
         {
             using (var db = new ShopTPTDataContext())
             {
-                var tmp = db.Bills.SingleOrDefault(x => x.BillCode == bill.BillCode);
+                var tmp = db.Bills.SingleOrDefault(x => x.BillID == bill.BillID);
                 if (tmp != null)
                 {
-                    tmp.BillCode = bill.BillCode;
+                    tmp.BillID = bill.BillID;
                     tmp.CreateDate = bill.CreateDate;
                     tmp.TotalAmount = bill.TotalAmount;
                     tmp.UserCode = bill.UserCode;
@@ -82,7 +82,7 @@ namespace DTO.DAO
         {
             using (var db = new ShopTPTDataContext())
             {
-                var bill = db.Bills.SingleOrDefault(x => x.BillCode == bID);
+                var bill = db.Bills.SingleOrDefault(x => x.BillID == bID);
                 if (bill != null)
                 {
                     db.Bills.DeleteOnSubmit(bill);
