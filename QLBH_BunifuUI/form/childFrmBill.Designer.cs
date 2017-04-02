@@ -64,7 +64,6 @@ namespace QLBH_BunifuUI.form
             this.childFrmProductElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.toolTipFrmProduct = new System.Windows.Forms.ToolTip(this.components);
             this.childFrmBillElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -79,7 +78,6 @@ namespace QLBH_BunifuUI.form
             // 
             // panelControl
             // 
-            this.panelControl.Controls.Add(this.button1);
             this.panelControl.Controls.Add(this.ptbImage);
             this.panelControl.Controls.Add(this.label2);
             this.panelControl.Controls.Add(this.numericUpDown1);
@@ -458,15 +456,6 @@ namespace QLBH_BunifuUI.form
             this.childFrmBillElipse.ElipseRadius = 0;
             this.childFrmBillElipse.TargetControl = this;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(616, 240);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 115;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // ChildFrmBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,7 +508,6 @@ namespace QLBH_BunifuUI.form
         private BunifuElipse childFrmProductElipse;
         private System.Windows.Forms.ToolTip toolTipFrmProduct;
         private BunifuElipse childFrmBillElipse;
-        private System.Windows.Forms.Button button1;
 
     }
 }
