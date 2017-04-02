@@ -49,6 +49,7 @@ namespace QLBH_BunifuUI.form
             this.bunifuDragControlFRMLogin = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer_Loader = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.rtb = new System.Windows.Forms.RichTextBox();
             this.panelLogin.SuspendLayout();
             this.panelSQLServer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -61,6 +62,7 @@ namespace QLBH_BunifuUI.form
             // 
             this.panelLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogin.BackgroundImage")));
             this.panelLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLogin.Controls.Add(this.rtb);
             this.panelLogin.Controls.Add(this.panelSQLServer);
             this.panelLogin.Controls.Add(this.btnExit);
             this.panelLogin.Controls.Add(this.imageFrmLogin);
@@ -221,7 +223,7 @@ namespace QLBH_BunifuUI.form
             this.txtPassword.BorderColorMouseHover = System.Drawing.Color.White;
             this.txtPassword.BorderThickness = 1;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.White;
             this.txtPassword.isPassword = true;
             this.txtPassword.Location = new System.Drawing.Point(47, 208);
@@ -230,7 +232,7 @@ namespace QLBH_BunifuUI.form
             this.txtPassword.Padding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.txtPassword.Size = new System.Drawing.Size(301, 45);
             this.txtPassword.TabIndex = 11;
-            this.txtPassword.Text = "Pasword";
+            this.txtPassword.Text = "123456";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
@@ -255,7 +257,7 @@ namespace QLBH_BunifuUI.form
             this.txtUsername.BorderColorMouseHover = System.Drawing.Color.White;
             this.txtUsername.BorderThickness = 1;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.White;
             this.txtUsername.isPassword = false;
             this.txtUsername.Location = new System.Drawing.Point(47, 153);
@@ -264,7 +266,7 @@ namespace QLBH_BunifuUI.form
             this.txtUsername.Padding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.txtUsername.Size = new System.Drawing.Size(301, 45);
             this.txtUsername.TabIndex = 10;
-            this.txtUsername.Text = "Tên đăng nhập";
+            this.txtUsername.Text = "admin";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsername_KeyDown);
             // 
@@ -289,6 +291,14 @@ namespace QLBH_BunifuUI.form
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // rtb
+            // 
+            this.rtb.Location = new System.Drawing.Point(93, 24);
+            this.rtb.Name = "rtb";
+            this.rtb.Size = new System.Drawing.Size(267, 90);
+            this.rtb.TabIndex = 18;
+            this.rtb.Text = "";
             // 
             // FrmLogin
             // 
@@ -327,5 +337,6 @@ namespace QLBH_BunifuUI.form
         private Timer timer_Loader;
         private ImageList imageList1;
         private ComboBox cbbSqlServer;
+        private RichTextBox rtb;
     }
 }

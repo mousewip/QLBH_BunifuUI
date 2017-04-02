@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ShopTPT" Class="ShopTPTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=sa" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="ShopTPTConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MOUSEWIP\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=sa" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="ShopTPTConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Bill" Member="Bills">
     <Type Name="Bill">
       <Column Name="BillCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -47,7 +47,8 @@
       <Column Name="Color" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Trademark" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Image" Type="System.Byte[]" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Discount" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="Product_BillDetail" Member="BillDetails" ThisKey="ProductCode" OtherKey="ProductCode" Type="BillDetail" />
       <Association Name="ProductCategory_Product" Member="ProductCategory" ThisKey="PCCode" OtherKey="PCCode" Type="ProductCategory" IsForeignKey="true" />
     </Type>

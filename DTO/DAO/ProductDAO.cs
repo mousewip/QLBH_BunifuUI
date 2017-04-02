@@ -34,6 +34,14 @@ namespace DTO.DAO
             return lProduct;
         }
 
+        public Product SelectSingleProduct(string productCode)
+        {
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.Products.SingleOrDefault(x => x.ProductCode == productCode);
+            } 
+        }
+
         public bool Add(Product product)
         {
             using (var db = new ShopTPTDataContext())
@@ -47,7 +55,7 @@ namespace DTO.DAO
                 catch (Exception)
                 {
 
-                    //
+                    //ig
                 }
             }
             return false;

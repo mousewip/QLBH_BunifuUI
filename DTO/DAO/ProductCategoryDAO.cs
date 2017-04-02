@@ -32,6 +32,15 @@ namespace DTO.DAO
             }
         }
 
+
+        public ProductCategory SelectSingleProductCategory(int? productCategoryId)
+        {
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.ProductCategories.SingleOrDefault(x => x.PCCode == productCategoryId);
+            }
+        }
+
         public bool Add(ProductCategory pc)
         {
             using (var db = new ShopTPTDataContext())

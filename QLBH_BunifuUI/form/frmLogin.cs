@@ -35,20 +35,22 @@ namespace QLBH_BunifuUI.form
                 SQLInstance = cbbSqlServer.SelectedValue.ToString();
             }
             DTO.Properties.Settings.Default.ShopTPTConnectionString =
-                "Data Source="+ SQLInstance+";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
-                "a;Password=tpt";
-
-
-            int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
-            if (result == 1)
+                    "Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+                    "a;Password=tpt";
+            if (Helper.IsServerConnected("Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+                "a;Password=tpt"))
             {
-                Hide();
-                Splash.frmMain.ShowDialog();
-                Show();
-            }
-            else if(result == 0)
-            {
-                MessageBox.Show(@"Sai tên đăng nhập hoặc mật khẩu", @"Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                int result = CheckLogin(txtUsername.Text, Helper.Md5Encrypt(txtPassword.Text));
+                if (result == 1)
+                {
+                    Hide();
+                    Splash.frmMain.ShowDialog();
+                    Show();
+                }
+                else
+                {
+                    MessageBox.Show(@"Sai tên đăng nhập hoặc mật khẩu", @"Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
@@ -65,21 +67,20 @@ namespace QLBH_BunifuUI.form
             }
             catch (Exception)
             {
-
-                
                 return -1;
             }
-           // return false;
+            // return false;
             //return UserDao.Instance.FindSingleUser(userName, pass) != 0 ? true : false;
         }
-        
+
         private void Process()
         {
             // Retrieve the enumerator instance and then the data.  
-           // var instance = SqlDataSourceEnumerator.Instance;
+            // var instance = SqlDataSourceEnumerator.Instance;
             var table = FindSqlServerName.GetAllSqlServerName();
-
+            string resul = "";
             cbbSqlServer.DataSource = table;
+
 
             cbbSqlServer.DisplayMember = "ServerName";
             cbbSqlServer.ValueMember = "ServerName";
@@ -98,7 +99,7 @@ namespace QLBH_BunifuUI.form
             {
                 Login();
             }
-            
+
         }
 
         private void cbbSqlServer_DropDown(object sender, EventArgs e)

@@ -60,7 +60,7 @@ namespace QLBH_BunifuUI.form
                 Quantity = int.Parse(txtProductQuantity.Text.Trim()),
                 Trademark = txtProductTrademark.Text.Trim(),
                 
-                Image = ConvertImage2Binary(ptbImageProduct.Image)
+                Image = ptbImageProduct.Image == null ? null : ConvertImage2Binary(ptbImageProduct.Image)
             };
             var result = ProductDao.Instance.Add(product);
             if (result)

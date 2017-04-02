@@ -943,6 +943,8 @@ namespace DTO.Model
 		
 		private byte[] _Image;
 		
+		private System.Nullable<double> _Discount;
+		
 		private EntitySet<BillDetail> _BillDetails;
 		
 		private EntityRef<ProductCategory> _ProductCategory;
@@ -967,8 +969,10 @@ namespace DTO.Model
     partial void OnSizeChanged();
     partial void OnTrademarkChanging(string value);
     partial void OnTrademarkChanged();
-    partial void OnImageChanging(System.Data.Linq.Binary value);
+    partial void OnImageChanging(byte[] value);
     partial void OnImageChanged();
+    partial void OnDiscountChanging(System.Nullable<double> value);
+    partial void OnDiscountChanged();
     #endregion
 		
 		public Product()
@@ -1158,6 +1162,26 @@ namespace DTO.Model
 					this._Image = value;
 					this.SendPropertyChanged("Image");
 					this.OnImageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Discount", DbType="Float")]
+		public System.Nullable<double> Discount
+		{
+			get
+			{
+				return this._Discount;
+			}
+			set
+			{
+				if ((this._Discount != value))
+				{
+					this.OnDiscountChanging(value);
+					this.SendPropertyChanging();
+					this._Discount = value;
+					this.SendPropertyChanged("Discount");
+					this.OnDiscountChanged();
 				}
 			}
 		}

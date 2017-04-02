@@ -34,11 +34,11 @@ namespace DTO.DAO
             return lnv;
         }
 
-        public bool Update(int maNV, User nv)
+        public bool Update(int maNv, User nv)
         {
             using (var db = new ShopTPTDataContext())
             {
-                var user = db.Users.SingleOrDefault(x => x.UserCode == maNV);
+                var user = db.Users.SingleOrDefault(x => x.UserCode == maNv);
                 if (user != null)
                 {
                     user.UserCode = nv.UserCode;
@@ -108,16 +108,16 @@ namespace DTO.DAO
             return 0;
         }
 
-        public List<User> FindUserByID(string strFind)
+        public List<User> FindUser(string strFind)
         {
-            int userID;
+            int userId;
             try
             {
-                userID = int.Parse(strFind);
+                userId = int.Parse(strFind);
             }
             catch (Exception)
             {
-                userID = 0;
+                userId = 0;
             }
 
             List<User> lUser;
@@ -125,9 +125,17 @@ namespace DTO.DAO
             {
                 lUser =
                     db.Users.Select(x => x)
-                        .Where(p => p.UserCode == userID || p.FullName.Contains(strFind) || p.UserName.Contains(strFind)).ToList();
+                        .Where(p => p.UserCode == userId || p.FullName.Contains(strFind) || p.UserName.Contains(strFind)).ToList();
             }
             return lUser;
+        }
+
+        public User SelectSingleUserById(string id)
+        {
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.Users.SingleOrDefault(x => x.UserCode == int.Parse(id));
+            }
         }
     }
 }

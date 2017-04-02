@@ -32,18 +32,17 @@ namespace QLBH_BunifuUI.form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChildFrmProduct));
             this.childFrmProductElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelControl = new System.Windows.Forms.Panel();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnRefresh = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnDeleteProduct = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnEditProduct = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAddProduct = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelDTGV = new System.Windows.Forms.Panel();
@@ -51,51 +50,36 @@ namespace QLBH_BunifuUI.form
             this.ProductCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTipFrmProduct = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panelProductDetail = new System.Windows.Forms.Panel();
-            this.panelInfo = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtSize = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.ptbImage = new System.Windows.Forms.PictureBox();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAccept = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtTrademark = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtProductCode = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddProduct)).BeginInit();
             this.panelDTGV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProduct)).BeginInit();
-            this.panelProductDetail.SuspendLayout();
-            this.panelInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // childFrmProductElipse
@@ -108,7 +92,6 @@ namespace QLBH_BunifuUI.form
             this.panelControl.Controls.Add(this.txtSearch);
             this.panelControl.Controls.Add(this.btnRefresh);
             this.panelControl.Controls.Add(this.btnDeleteProduct);
-            this.panelControl.Controls.Add(this.btnEditProduct);
             this.panelControl.Controls.Add(this.btnSearch);
             this.panelControl.Controls.Add(this.btnAddProduct);
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Top;
@@ -132,7 +115,7 @@ namespace QLBH_BunifuUI.form
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(325, 47);
-            this.txtSearch.TabIndex = 7;
+            this.txtSearch.TabIndex = 1;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnRefresh
@@ -162,19 +145,6 @@ namespace QLBH_BunifuUI.form
             this.btnDeleteProduct.TabStop = false;
             this.btnDeleteProduct.Zoom = 15;
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
-            // 
-            // btnEditProduct
-            // 
-            this.btnEditProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnEditProduct.Image")));
-            this.btnEditProduct.ImageActive = null;
-            this.btnEditProduct.Location = new System.Drawing.Point(607, 9);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(50, 50);
-            this.btnEditProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnEditProduct.TabIndex = 3;
-            this.btnEditProduct.TabStop = false;
-            this.btnEditProduct.Zoom = 15;
             // 
             // btnSearch
             // 
@@ -206,10 +176,12 @@ namespace QLBH_BunifuUI.form
             // 
             // panelDTGV
             // 
+            this.panelDTGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelDTGV.Controls.Add(this.dtgvProduct);
             this.panelDTGV.Location = new System.Drawing.Point(30, 93);
             this.panelDTGV.Name = "panelDTGV";
-            this.panelDTGV.Size = new System.Drawing.Size(400, 572);
+            this.panelDTGV.Size = new System.Drawing.Size(400, 560);
             this.panelDTGV.TabIndex = 4;
             // 
             // dtgvProduct
@@ -218,36 +190,36 @@ namespace QLBH_BunifuUI.form
             this.dtgvProduct.AllowUserToDeleteRows = false;
             this.dtgvProduct.AllowUserToResizeColumns = false;
             this.dtgvProduct.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.dtgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.dtgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dtgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.dtgvProduct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvProduct.BackgroundColor = System.Drawing.Color.White;
             this.dtgvProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dtgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductCode,
             this.ProductName});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.YellowGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvProduct.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.YellowGreen;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvProduct.DefaultCellStyle = dataGridViewCellStyle23;
             this.dtgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvProduct.DoubleBuffered = true;
             this.dtgvProduct.EnableHeadersVisualStyles = false;
@@ -258,22 +230,23 @@ namespace QLBH_BunifuUI.form
             this.dtgvProduct.Name = "dtgvProduct";
             this.dtgvProduct.ReadOnly = true;
             this.dtgvProduct.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dtgvProduct.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.dtgvProduct.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.dtgvProduct.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dtgvProduct.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvProduct.Size = new System.Drawing.Size(400, 572);
-            this.dtgvProduct.TabIndex = 6;
+            this.dtgvProduct.Size = new System.Drawing.Size(400, 560);
+            this.dtgvProduct.TabIndex = 2;
+            this.dtgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProduct_CellClick);
             // 
             // ProductCode
             // 
@@ -296,437 +269,365 @@ namespace QLBH_BunifuUI.form
             this.ProductName.ReadOnly = true;
             this.ProductName.Width = 200;
             // 
-            // label1
+            // txtColor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label1.Location = new System.Drawing.Point(48, 176);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tên sản phẩm";
+            this.txtColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColor.Location = new System.Drawing.Point(664, 312);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.ReadOnly = true;
+            this.txtColor.Size = new System.Drawing.Size(263, 26);
+            this.txtColor.TabIndex = 6;
             // 
-            // textBox1
+            // label16
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(213, 173);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 26);
-            this.textBox1.TabIndex = 2;
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label16.Location = new System.Drawing.Point(499, 315);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(43, 20);
+            this.label16.TabIndex = 88;
+            this.label16.Text = "Màu";
             // 
-            // label2
+            // txtSize
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label2.Location = new System.Drawing.Point(48, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Code";
+            this.txtSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSize.Location = new System.Drawing.Point(664, 272);
+            this.txtSize.Name = "txtSize";
+            this.txtSize.ReadOnly = true;
+            this.txtSize.Size = new System.Drawing.Size(263, 26);
+            this.txtSize.TabIndex = 5;
             // 
-            // textBox2
+            // label15
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(213, 219);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 26);
-            this.textBox2.TabIndex = 4;
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
+            this.label15.Location = new System.Drawing.Point(499, 275);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(44, 20);
+            this.label15.TabIndex = 86;
+            this.label15.Text = "Size";
             // 
-            // label3
+            // ptbImage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label3.Location = new System.Drawing.Point(48, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Giá";
+            this.ptbImage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.ptbImage.Enabled = false;
+            this.ptbImage.Image = ((System.Drawing.Image)(resources.GetObject("ptbImage.Image")));
+            this.ptbImage.Location = new System.Drawing.Point(664, 79);
+            this.ptbImage.Name = "ptbImage";
+            this.ptbImage.Size = new System.Drawing.Size(197, 96);
+            this.ptbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbImage.TabIndex = 85;
+            this.ptbImage.TabStop = false;
+            this.ptbImage.DoubleClick += new System.EventHandler(this.ptbImage_DoubleClick);
             // 
-            // textBox3
+            // btnCancel
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(213, 264);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(263, 26);
-            this.textBox3.TabIndex = 6;
+            this.btnCancel.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.BorderRadius = 0;
+            this.btnCancel.ButtonText = "Hủy";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCancel.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCancel.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCancel.Iconimage")));
+            this.btnCancel.Iconimage_right = null;
+            this.btnCancel.Iconimage_right_Selected = null;
+            this.btnCancel.Iconimage_Selected = null;
+            this.btnCancel.IconMarginLeft = 0;
+            this.btnCancel.IconMarginRight = 0;
+            this.btnCancel.IconRightVisible = true;
+            this.btnCancel.IconRightZoom = 0D;
+            this.btnCancel.IconVisible = true;
+            this.btnCancel.IconZoom = 90D;
+            this.btnCancel.IsTab = false;
+            this.btnCancel.Location = new System.Drawing.Point(697, 594);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnCancel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnCancel.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnCancel.selected = false;
+            this.btnCancel.Size = new System.Drawing.Size(140, 40);
+            this.btnCancel.TabIndex = 13;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Textcolor = System.Drawing.Color.White;
+            this.btnCancel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // label4
+            // btnAccept
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label4.Location = new System.Drawing.Point(48, 312);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Danh mục";
+            this.btnAccept.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAccept.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAccept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAccept.BorderRadius = 0;
+            this.btnAccept.ButtonText = "Xác nhận";
+            this.btnAccept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccept.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAccept.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAccept.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAccept.Iconimage")));
+            this.btnAccept.Iconimage_right = null;
+            this.btnAccept.Iconimage_right_Selected = null;
+            this.btnAccept.Iconimage_Selected = null;
+            this.btnAccept.IconMarginLeft = 0;
+            this.btnAccept.IconMarginRight = 0;
+            this.btnAccept.IconRightVisible = true;
+            this.btnAccept.IconRightZoom = 0D;
+            this.btnAccept.IconVisible = true;
+            this.btnAccept.IconZoom = 90D;
+            this.btnAccept.IsTab = false;
+            this.btnAccept.Location = new System.Drawing.Point(870, 594);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAccept.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAccept.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAccept.selected = false;
+            this.btnAccept.Size = new System.Drawing.Size(140, 40);
+            this.btnAccept.TabIndex = 14;
+            this.btnAccept.Text = "Xác nhận";
+            this.btnAccept.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccept.Textcolor = System.Drawing.Color.White;
+            this.btnAccept.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
-            // textBox4
+            // btnUpdate
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(213, 309);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(263, 26);
-            this.textBox4.TabIndex = 8;
+            this.btnUpdate.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.BorderRadius = 0;
+            this.btnUpdate.ButtonText = "Cập nhật";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.DisabledColor = System.Drawing.Color.Gray;
+            this.btnUpdate.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Iconimage")));
+            this.btnUpdate.Iconimage_right = null;
+            this.btnUpdate.Iconimage_right_Selected = null;
+            this.btnUpdate.Iconimage_Selected = null;
+            this.btnUpdate.IconMarginLeft = 0;
+            this.btnUpdate.IconMarginRight = 0;
+            this.btnUpdate.IconRightVisible = true;
+            this.btnUpdate.IconRightZoom = 0D;
+            this.btnUpdate.IconVisible = true;
+            this.btnUpdate.IconZoom = 90D;
+            this.btnUpdate.IsTab = false;
+            this.btnUpdate.Location = new System.Drawing.Point(503, 594);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnUpdate.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnUpdate.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnUpdate.selected = false;
+            this.btnUpdate.Size = new System.Drawing.Size(140, 40);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Textcolor = System.Drawing.Color.White;
+            this.btnUpdate.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // label5
+            // txtDiscount
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label5.Location = new System.Drawing.Point(48, 357);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Số lượng";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(213, 354);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(263, 26);
-            this.textBox5.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label6.Location = new System.Drawing.Point(48, 402);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Nhãn hiệu";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(213, 399);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(263, 26);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label7.Location = new System.Drawing.Point(48, 448);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Giảm giá";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(213, 445);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(263, 26);
-            this.textBox7.TabIndex = 14;
-            // 
-            // panelProductDetail
-            // 
-            this.panelProductDetail.Controls.Add(this.panelInfo);
-            this.panelProductDetail.Controls.Add(this.textBox7);
-            this.panelProductDetail.Controls.Add(this.label7);
-            this.panelProductDetail.Controls.Add(this.textBox6);
-            this.panelProductDetail.Controls.Add(this.label6);
-            this.panelProductDetail.Controls.Add(this.textBox5);
-            this.panelProductDetail.Controls.Add(this.label5);
-            this.panelProductDetail.Controls.Add(this.textBox4);
-            this.panelProductDetail.Controls.Add(this.label4);
-            this.panelProductDetail.Controls.Add(this.textBox3);
-            this.panelProductDetail.Controls.Add(this.label3);
-            this.panelProductDetail.Controls.Add(this.textBox2);
-            this.panelProductDetail.Controls.Add(this.label2);
-            this.panelProductDetail.Controls.Add(this.textBox1);
-            this.panelProductDetail.Controls.Add(this.label1);
-            this.panelProductDetail.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelProductDetail.Location = new System.Drawing.Point(436, 73);
-            this.panelProductDetail.Name = "panelProductDetail";
-            this.panelProductDetail.Size = new System.Drawing.Size(640, 592);
-            this.panelProductDetail.TabIndex = 5;
-            // 
-            // panelInfo
-            // 
-            this.panelInfo.Controls.Add(this.bunifuFlatButton3);
-            this.panelInfo.Controls.Add(this.bunifuFlatButton2);
-            this.panelInfo.Controls.Add(this.bunifuFlatButton1);
-            this.panelInfo.Controls.Add(this.textBox8);
-            this.panelInfo.Controls.Add(this.label8);
-            this.panelInfo.Controls.Add(this.textBox9);
-            this.panelInfo.Controls.Add(this.label9);
-            this.panelInfo.Controls.Add(this.textBox10);
-            this.panelInfo.Controls.Add(this.label10);
-            this.panelInfo.Controls.Add(this.textBox11);
-            this.panelInfo.Controls.Add(this.label11);
-            this.panelInfo.Controls.Add(this.textBox12);
-            this.panelInfo.Controls.Add(this.label12);
-            this.panelInfo.Controls.Add(this.textBox13);
-            this.panelInfo.Controls.Add(this.label13);
-            this.panelInfo.Controls.Add(this.textBox14);
-            this.panelInfo.Controls.Add(this.label14);
-            this.panelInfo.Controls.Add(this.pictureBox1);
-            this.panelInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelInfo.Location = new System.Drawing.Point(0, 0);
-            this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(640, 592);
-            this.panelInfo.TabIndex = 15;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(213, 445);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(263, 26);
-            this.textBox8.TabIndex = 14;
+            this.txtDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscount.Location = new System.Drawing.Point(664, 533);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.ReadOnly = true;
+            this.txtDiscount.Size = new System.Drawing.Size(263, 26);
+            this.txtDiscount.TabIndex = 11;
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label8.Location = new System.Drawing.Point(48, 448);
+            this.label8.Location = new System.Drawing.Point(499, 536);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 20);
-            this.label8.TabIndex = 13;
+            this.label8.TabIndex = 80;
             this.label8.Text = "Giảm giá";
             // 
-            // textBox9
+            // txtTrademark
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(213, 399);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(263, 26);
-            this.textBox9.TabIndex = 12;
+            this.txtTrademark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTrademark.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrademark.Location = new System.Drawing.Point(664, 491);
+            this.txtTrademark.Name = "txtTrademark";
+            this.txtTrademark.ReadOnly = true;
+            this.txtTrademark.Size = new System.Drawing.Size(263, 26);
+            this.txtTrademark.TabIndex = 10;
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label9.Location = new System.Drawing.Point(48, 402);
+            this.label9.Location = new System.Drawing.Point(499, 494);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 20);
-            this.label9.TabIndex = 11;
+            this.label9.TabIndex = 78;
             this.label9.Text = "Nhãn hiệu";
             // 
-            // textBox10
+            // txtQuantity
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(213, 354);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(263, 26);
-            this.textBox10.TabIndex = 10;
+            this.txtQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(664, 445);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.ReadOnly = true;
+            this.txtQuantity.Size = new System.Drawing.Size(263, 26);
+            this.txtQuantity.TabIndex = 9;
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label10.Location = new System.Drawing.Point(48, 357);
+            this.label10.Location = new System.Drawing.Point(499, 448);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 20);
-            this.label10.TabIndex = 9;
+            this.label10.TabIndex = 76;
             this.label10.Text = "Số lượng";
             // 
-            // textBox11
+            // txtCategory
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(213, 309);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(263, 26);
-            this.textBox11.TabIndex = 8;
+            this.txtCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategory.Location = new System.Drawing.Point(664, 401);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.ReadOnly = true;
+            this.txtCategory.Size = new System.Drawing.Size(263, 26);
+            this.txtCategory.TabIndex = 8;
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label11.Location = new System.Drawing.Point(48, 312);
+            this.label11.Location = new System.Drawing.Point(499, 404);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(90, 20);
-            this.label11.TabIndex = 7;
+            this.label11.TabIndex = 74;
             this.label11.Text = "Danh mục";
             // 
-            // textBox12
+            // txtPrice
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(213, 264);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(263, 26);
-            this.textBox12.TabIndex = 6;
+            this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(664, 357);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.ReadOnly = true;
+            this.txtPrice.Size = new System.Drawing.Size(263, 26);
+            this.txtPrice.TabIndex = 7;
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label12.Location = new System.Drawing.Point(48, 267);
+            this.label12.Location = new System.Drawing.Point(499, 360);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(37, 20);
-            this.label12.TabIndex = 5;
+            this.label12.TabIndex = 72;
             this.label12.Text = "Giá";
             // 
-            // textBox13
+            // txtProductCode
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(213, 219);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(263, 26);
-            this.textBox13.TabIndex = 4;
+            this.txtProductCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProductCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductCode.Location = new System.Drawing.Point(664, 194);
+            this.txtProductCode.Name = "txtProductCode";
+            this.txtProductCode.ReadOnly = true;
+            this.txtProductCode.Size = new System.Drawing.Size(263, 26);
+            this.txtProductCode.TabIndex = 3;
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label13.Location = new System.Drawing.Point(48, 222);
+            this.label13.Location = new System.Drawing.Point(499, 200);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 20);
-            this.label13.TabIndex = 3;
+            this.label13.TabIndex = 70;
             this.label13.Text = "Code";
             // 
-            // textBox14
+            // txtProductName
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(213, 173);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(263, 26);
-            this.textBox14.TabIndex = 2;
+            this.txtProductName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductName.Location = new System.Drawing.Point(664, 236);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.ReadOnly = true;
+            this.txtProductName.Size = new System.Drawing.Size(263, 26);
+            this.txtProductName.TabIndex = 4;
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(70)))), ((int)(((byte)(18)))));
-            this.label14.Location = new System.Drawing.Point(48, 176);
+            this.label14.Location = new System.Drawing.Point(499, 239);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(122, 20);
-            this.label14.TabIndex = 1;
+            this.label14.TabIndex = 68;
             this.label14.Text = "Tên sản phẩm";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(213, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 115);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuFlatButton3
-            // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Hủy";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(246, 521);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(140, 40);
-            this.bunifuFlatButton3.TabIndex = 40;
-            this.bunifuFlatButton3.Text = "Hủy";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Xác nhận";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(419, 521);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(140, 40);
-            this.bunifuFlatButton2.TabIndex = 39;
-            this.bunifuFlatButton2.Text = "Xác nhận";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Cập nhật";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(52, 521);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(140, 40);
-            this.bunifuFlatButton1.TabIndex = 38;
-            this.bunifuFlatButton1.Text = "Cập nhật";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ChildFrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 665);
-            this.Controls.Add(this.panelProductDetail);
+            this.Controls.Add(this.txtColor);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtSize);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.ptbImage);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnAccept);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.txtDiscount);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtTrademark);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtQuantity);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtCategory);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtProductCode);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtProductName);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.panelDTGV);
             this.Controls.Add(this.panelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -735,17 +636,13 @@ namespace QLBH_BunifuUI.form
             this.panelControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEditProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddProduct)).EndInit();
             this.panelDTGV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProduct)).EndInit();
-            this.panelProductDetail.ResumeLayout(false);
-            this.panelProductDetail.PerformLayout();
-            this.panelInfo.ResumeLayout(false);
-            this.panelInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -755,7 +652,6 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Panel panelControl;
         private BunifuImageButton btnRefresh;
         private BunifuImageButton btnDeleteProduct;
-        private BunifuImageButton btnEditProduct;
         private BunifuImageButton btnSearch;
         private BunifuImageButton btnAddProduct;
         private System.Windows.Forms.Panel panelDTGV;
@@ -764,39 +660,27 @@ namespace QLBH_BunifuUI.form
         private BunifuCustomDataGrid dtgvProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-        private System.Windows.Forms.Panel panelProductDetail;
-        private System.Windows.Forms.Panel panelInfo;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtSize;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox ptbImage;
+        private BunifuFlatButton btnCancel;
+        private BunifuFlatButton btnAccept;
+        private BunifuFlatButton btnUpdate;
+        private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTrademark;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtProductCode;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private BunifuFlatButton bunifuFlatButton3;
-        private BunifuFlatButton bunifuFlatButton2;
-        private BunifuFlatButton bunifuFlatButton1;
     }
 }
