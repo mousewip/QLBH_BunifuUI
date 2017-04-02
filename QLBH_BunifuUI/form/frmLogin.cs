@@ -52,10 +52,8 @@ namespace QLBH_BunifuUI.form
                     Session.Instance.Add("ID", user.UserID);
                     Session.Instance.Add("RoleID", user.RoleID);
                     Session.Instance.Add("Password", user.Password);
-                    Thread LoadFormThread = new Thread(new ThreadStart(LoadAllForm));
-                    LoadFormThread.Start();
-                    LoadFormThread.Join();
-                    //LoadAllForm();
+                    
+                    LoadAllForm();
                     Hide();
                     Splash.frmMain.ShowDialog();
                     Show();
