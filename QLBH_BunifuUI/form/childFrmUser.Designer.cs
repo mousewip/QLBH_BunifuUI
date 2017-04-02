@@ -38,8 +38,8 @@ namespace QLBH_BunifuUI.form
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChildFrmUser));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.childFrmUserElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelControl = new System.Windows.Forms.Panel();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -49,9 +49,6 @@ namespace QLBH_BunifuUI.form
             this.btnAddUser = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelDTGV = new System.Windows.Forms.Panel();
             this.dtgvUser2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolTipFrmUser = new System.Windows.Forms.ToolTip(this.components);
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccept = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -71,9 +68,12 @@ namespace QLBH_BunifuUI.form
             this.lblPass = new System.Windows.Forms.Label();
             this.txtCurrentPassword = new System.Windows.Forms.TextBox();
             this.btnChangePassword = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.radioBtnNam = new System.Windows.Forms.RadioButton();
             this.radioBtnNu = new System.Windows.Forms.RadioButton();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteUser)).BeginInit();
@@ -251,39 +251,6 @@ namespace QLBH_BunifuUI.form
             this.dtgvUser2.Size = new System.Drawing.Size(400, 562);
             this.dtgvUser2.TabIndex = 13;
             this.dtgvUser2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvUser2_CellClick);
-            // 
-            // manv
-            // 
-            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.manv.DataPropertyName = "UserCode";
-            this.manv.FillWeight = 6F;
-            this.manv.HeaderText = "ID";
-            this.manv.Name = "manv";
-            this.manv.ReadOnly = true;
-            this.manv.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.manv.Width = 70;
-            // 
-            // tenNV
-            // 
-            this.tenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.tenNV.DataPropertyName = "FullName";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.tenNV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.tenNV.FillWeight = 11.52756F;
-            this.tenNV.HeaderText = "Họ Tên";
-            this.tenNV.Name = "tenNV";
-            this.tenNV.ReadOnly = true;
-            this.tenNV.Width = 200;
-            // 
-            // tk
-            // 
-            this.tk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.tk.DataPropertyName = "UserName";
-            this.tk.FillWeight = 0.4724407F;
-            this.tk.HeaderText = "Tài Khoản";
-            this.tk.Name = "tk";
-            this.tk.ReadOnly = true;
-            this.tk.Width = 130;
             // 
             // btnCancel
             // 
@@ -581,17 +548,6 @@ namespace QLBH_BunifuUI.form
             this.btnChangePassword.Visible = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
-            // txtAddress
-            // 
-            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(619, 293);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(263, 62);
-            this.txtAddress.TabIndex = 6;
-            this.txtAddress.Text = "";
-            // 
             // radioBtnNam
             // 
             this.radioBtnNam.AutoSize = true;
@@ -616,14 +572,60 @@ namespace QLBH_BunifuUI.form
             this.radioBtnNu.Text = "Nữ";
             this.radioBtnNu.UseVisualStyleBackColor = true;
             // 
+            // manv
+            // 
+            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.manv.DataPropertyName = "UserID";
+            this.manv.FillWeight = 6F;
+            this.manv.HeaderText = "ID";
+            this.manv.Name = "manv";
+            this.manv.ReadOnly = true;
+            this.manv.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.manv.Width = 70;
+            // 
+            // tenNV
+            // 
+            this.tenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.tenNV.DataPropertyName = "FullName";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.tenNV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.tenNV.FillWeight = 11.52756F;
+            this.tenNV.HeaderText = "Họ Tên";
+            this.tenNV.Name = "tenNV";
+            this.tenNV.ReadOnly = true;
+            this.tenNV.Width = 200;
+            // 
+            // tk
+            // 
+            this.tk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.tk.DataPropertyName = "UserName";
+            this.tk.FillWeight = 0.4724407F;
+            this.tk.HeaderText = "Tài Khoản";
+            this.tk.Name = "tk";
+            this.tk.ReadOnly = true;
+            this.tk.Width = 130;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(619, 290);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '*';
+            this.txtAddress.ReadOnly = true;
+            this.txtAddress.Size = new System.Drawing.Size(263, 53);
+            this.txtAddress.TabIndex = 43;
+            this.txtAddress.UseSystemPasswordChar = true;
+            // 
             // ChildFrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 665);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.radioBtnNu);
             this.Controls.Add(this.radioBtnNam);
-            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lblNewPass);
             this.Controls.Add(this.txtNewPassword);
@@ -671,9 +673,6 @@ namespace QLBH_BunifuUI.form
         private BunifuImageButton btnRefresh;
         private ToolTip toolTipFrmUser;
         private BunifuMetroTextbox txtSearch;
-        private DataGridViewTextBoxColumn manv;
-        private DataGridViewTextBoxColumn tenNV;
-        private DataGridViewTextBoxColumn tk;
         private BunifuFlatButton btnCancel;
         private BunifuFlatButton btnAccept;
         private BunifuFlatButton btnUpdate;
@@ -692,8 +691,11 @@ namespace QLBH_BunifuUI.form
         private TextBox txtNewPassword;
         private Label lblPass;
         private TextBox txtCurrentPassword;
-        private RichTextBox txtAddress;
         private RadioButton radioBtnNu;
         private RadioButton radioBtnNam;
+        private DataGridViewTextBoxColumn manv;
+        private DataGridViewTextBoxColumn tenNV;
+        private DataGridViewTextBoxColumn tk;
+        private TextBox txtAddress;
     }
 }

@@ -34,9 +34,11 @@ namespace QLBH_BunifuUI.form
             {
                 SQLInstance = cbbSqlServer.SelectedValue.ToString();
             }
-            DTO.Properties.Settings.Default.ShopTPTConnectionString =
-                    "Data Source=" + SQLInstance + "\\MOUSEWIP;Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
-                    "a;Password=tpt";
+
+            SQLInstance = "LIVINGROOM-PC";
+            //DTO.Properties.Settings.Default.ShopTPTConnectionString =
+            //        "Data Source=" + SQLInstance + "Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
+            //        "a;Password=tpt";
             if (Helper.IsServerConnected("Data Source=" + SQLInstance + ";Initial Catalog=ShopTPT;Persist Security Info=True;User ID=s" +
                 "a;Password=tpt"))
             {
@@ -106,5 +108,7 @@ namespace QLBH_BunifuUI.form
         {
             Process();
         }
+
+       
     }
 }

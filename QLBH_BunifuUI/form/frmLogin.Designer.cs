@@ -49,7 +49,6 @@ namespace QLBH_BunifuUI.form
             this.bunifuDragControlFRMLogin = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer_Loader = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.rtb = new System.Windows.Forms.RichTextBox();
             this.panelLogin.SuspendLayout();
             this.panelSQLServer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -62,7 +61,6 @@ namespace QLBH_BunifuUI.form
             // 
             this.panelLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogin.BackgroundImage")));
             this.panelLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogin.Controls.Add(this.rtb);
             this.panelLogin.Controls.Add(this.panelSQLServer);
             this.panelLogin.Controls.Add(this.btnExit);
             this.panelLogin.Controls.Add(this.imageFrmLogin);
@@ -107,10 +105,10 @@ namespace QLBH_BunifuUI.form
             // btnLogin
             // 
             this.btnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.BorderRadius = 0;
-            this.btnLogin.ButtonText = "Đăng nhập";
+            this.btnLogin.ButtonText = "ĐĂNG NHẬP";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.Gray;
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
@@ -125,18 +123,18 @@ namespace QLBH_BunifuUI.form
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(22, 124);
+            this.btnLogin.Location = new System.Drawing.Point(22, 121);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = true;
             this.btnLogin.Size = new System.Drawing.Size(241, 48);
             this.btnLogin.TabIndex = 20;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Text = "ĐĂNG NHẬP";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Textcolor = System.Drawing.Color.White;
-            this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblSQLServer
@@ -292,14 +290,6 @@ namespace QLBH_BunifuUI.form
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // rtb
-            // 
-            this.rtb.Location = new System.Drawing.Point(93, 24);
-            this.rtb.Name = "rtb";
-            this.rtb.Size = new System.Drawing.Size(267, 90);
-            this.rtb.TabIndex = 18;
-            this.rtb.Text = "";
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +327,5 @@ namespace QLBH_BunifuUI.form
         private Timer timer_Loader;
         private ImageList imageList1;
         private ComboBox cbbSqlServer;
-        private RichTextBox rtb;
     }
 }
