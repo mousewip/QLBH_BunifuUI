@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using DTO.DAO;
 using DTO.Model;
+using DTO;
+using QLBH_BunifuUI.Common;
 
 namespace QLBH_BunifuUI.form
 {
     public partial class ChildFrmUser : Form
     {
+        private static int roleID = (int)Session.Instance.Get("RoleID");
         public ChildFrmUser()
         {
             InitializeComponent();
@@ -25,24 +28,32 @@ namespace QLBH_BunifuUI.form
         {
             List<User> lUser = UserDao.Instance.View();
             dtgvUser2.DataSource = lUser;
-            if(lUser.Count != 0)
+            if (lUser.Count != 0)
                 SetInfo(lUser[0]);
 
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            var f = Application.OpenForms["cfuFrmCreateUser"];
-            if (f != null)
+            if (roleID == 1)
             {
-                f.Focus();
-                f.Show();
+                var f = Application.OpenForms["cfuFrmCreateUser"];
+                if (f != null)
+                {
+                    f.Focus();
+                    f.Show();
+                }
+                else
+                {
+                    var cfuCu = new CfuFrmCreateUser();
+                    cfuCu.Show();
+                }
             }
             else
             {
-                var cfuCu = new CfuFrmCreateUser();
-                cfuCu.Show();
-            }     
+                MessageBox.Show("Bạn không có quyền");
+            }
+            
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -52,27 +63,40 @@ namespace QLBH_BunifuUI.form
 
         private void btnDeleteUser_Click(object sender, EventArgs e)
         {
-            if (dtgvUser2.CurrentRow != null)
+            if(roleID == 1)
             {
-                var rowIndex = dtgvUser2.CurrentRow.Index;
-                var row = dtgvUser2.Rows[rowIndex];
-                string strVal = row.Cells[2].Value.ToString();
-                var result = MessageBox.Show("Bạn có chắc muốn xóa " + strVal + " ra khỏi hệ thống?", "Xóa nhân viên",
-                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
+                if (dtgvUser2.CurrentRow != null)
                 {
-                    UserDao.Instance.Delete(Int32.Parse(row.Cells[0].Value.ToString()));
-                    GetListUser();
-                    
+                    var rowIndex = dtgvUser2.CurrentRow.Index;
+                    var row = dtgvUser2.Rows[rowIndex];
+                    string strVal = row.Cells[2].Value.ToString();
+                    var result = MessageBox.Show("Bạn có chắc muốn xóa " + strVal + " ra khỏi hệ thống?", "Xóa nhân viên",
+                        MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        if (UserDao.Instance.Delete(Int32.Parse(row.Cells[0].Value.ToString())) == true)
+                        {
+                            MessageBox.Show("Xóa thành công");
+                        }
+                        else
+                            MessageBox.Show("Xóa thất bại");
+                        GetListUser();
+
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền");
+            }
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var strFind = txtSearch.Text;
             List<User> lUser = UserDao.Instance.FindUser(strFind);
-            dtgvUser2.DataSource =  lUser;
+            dtgvUser2.DataSource = lUser;
             if (lUser.Count != 0)
             {
                 SetInfo(lUser[0]);
@@ -81,11 +105,21 @@ namespace QLBH_BunifuUI.form
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            btnUpdate.Visible = false;
-            btnCancel.Visible = true;
-            btnAccept.Visible = true;
-            btnChangePassword.Visible = true;
-            ChangeReadonlyInput(false);
+            int userID = (int)Session.Instance.Get("ID");
+            
+            if (userID == int.Parse(txtUserID.Text.Trim()))
+            {
+                btnUpdate.Visible = false;
+                btnCancel.Visible = true;
+                btnAccept.Visible = true;
+                btnChangePassword.Visible = true;
+                ChangeReadonlyInput(false);
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền");
+            }
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -120,7 +154,7 @@ namespace QLBH_BunifuUI.form
 
         private void dtgvUser2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex < 0)
+            if (e.RowIndex < 0)
                 return;
             else
             {
@@ -140,5 +174,22 @@ namespace QLBH_BunifuUI.form
             txtEmail.Text = user.Email;
             txtPhone.Text = user.Phone;
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            var user = new User();
+            user.UserID = int.Parse(txtUserID.Text.Trim());
+            user.FullName = txtFullName.Text.Trim();
+            user.Email = txtEmail.Text.Trim();
+            user.Gender = radioBtnNam.Checked;
+            user.Address = txtAddress.Text.Trim();
+            user.Phone = txtPhone.Text.Trim();
+
+            if (!string.IsNullOrEmpty(txtCurrentPassword.Text) && !string.IsNullOrEmpty(txtNewPassword.Text))
+            {
+                user.Password = Helper.Md5Encrypt(txtNewPassword.Text.Trim());
+            }
+        }
     }
 }
+

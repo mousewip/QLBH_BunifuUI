@@ -84,28 +84,33 @@ namespace DTO.DAO
             return false;
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             using (var db = new ShopTPTDataContext())
             {
                 var user = db.Users.SingleOrDefault(x => x.UserID == id);
                 if (user != null) db.Users.DeleteOnSubmit(user);
-                db.SubmitChanges();
+                try
+                {
+                    db.SubmitChanges();
+                    return true;
+                }
+                catch(Exception)
+                {
+                    return false;
+                }
+                
             }
         }
 
 
-        public int FindSingleUser(string userName, string password)
+        public User FindSingleUser(string userName, string password)
         {
             using (var db = new ShopTPTDataContext())
             {
                 var user = db.Users.SingleOrDefault(x => x.UserName == userName && x.Password == password);
-                if (user != null)
-                {
-                    return user.UserID;
-                }
+                return user;
             }
-            return 0;
         }
 
         public List<User> FindUser(string strFind)

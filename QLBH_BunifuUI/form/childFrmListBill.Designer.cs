@@ -183,7 +183,6 @@
             this.dtgvBillDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvBillDetail.Size = new System.Drawing.Size(546, 553);
             this.dtgvBillDetail.TabIndex = 4;
-            this.dtgvBillDetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvBillDetail_CellContentClick);
             // 
             // childFrmProductElipse
             // 
@@ -263,7 +262,7 @@
             // btnAddProduct
             // 
             this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
+           // this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
             this.btnAddProduct.ImageActive = null;
             this.btnAddProduct.Location = new System.Drawing.Point(12, 13);
             this.btnAddProduct.Name = "btnAddProduct";
@@ -272,7 +271,6 @@
             this.btnAddProduct.TabIndex = 0;
             this.btnAddProduct.TabStop = false;
             this.btnAddProduct.Zoom = 15;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // childFrmBillElipse
             // 
@@ -281,7 +279,7 @@
             // 
             // panelDTGV
             // 
-            this.panelDTGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelDTGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelDTGV.Controls.Add(this.dtgvProduct);
             this.panelDTGV.Location = new System.Drawing.Point(30, 93);

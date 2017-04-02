@@ -10,9 +10,6 @@ namespace QLBH_BunifuUI.form
         public FrmMain()
         {
             InitializeComponent();
-            var sAtt = DTO.Properties.Settings.Default.ShopTPTConnectionString;
-
-            //richTextBox1.Text = sAtt;
         }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
@@ -65,7 +62,6 @@ namespace QLBH_BunifuUI.form
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
             ChangTitle(btnDashboard);
             panelMain.Controls.Clear();
             Splash.cfd.TopLevel = false;
@@ -145,13 +141,9 @@ namespace QLBH_BunifuUI.form
             // If the no button was pressed ...
             if (result == DialogResult.Yes)
             {
+                Session.Instance.Clear();
                 Close();
             }
-        }
-
-        private void bunifuSeparator1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

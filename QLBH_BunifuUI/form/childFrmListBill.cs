@@ -19,7 +19,7 @@ namespace QLBH_BunifuUI.form
 
         private void dtgvBillDetail_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-         
+
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
