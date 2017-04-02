@@ -110,7 +110,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnLogout, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnLogout, BunifuAnimatorNS.DecorationType.None);
             this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
@@ -150,7 +150,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnAbout, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnAbout, BunifuAnimatorNS.DecorationType.None);
             this.btnAbout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAbout.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.ForeColor = System.Drawing.Color.White;
             this.btnAbout.Iconcolor = System.Drawing.Color.Transparent;
             this.btnAbout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAbout.Iconimage")));
@@ -190,7 +190,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnSetting, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnSetting, BunifuAnimatorNS.DecorationType.None);
             this.btnSetting.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSetting.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
             this.btnSetting.Iconcolor = System.Drawing.Color.Transparent;
             this.btnSetting.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSetting.Iconimage")));
@@ -230,7 +230,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnUser, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnUser, BunifuAnimatorNS.DecorationType.None);
             this.btnUser.DisabledColor = System.Drawing.Color.Gray;
-            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.Iconcolor = System.Drawing.Color.Transparent;
             this.btnUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUser.Iconimage")));
@@ -270,7 +270,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnProductCategory, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnProductCategory, BunifuAnimatorNS.DecorationType.None);
             this.btnProductCategory.DisabledColor = System.Drawing.Color.Gray;
-            this.btnProductCategory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductCategory.ForeColor = System.Drawing.Color.White;
             this.btnProductCategory.Iconcolor = System.Drawing.Color.Transparent;
             this.btnProductCategory.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProductCategory.Iconimage")));
@@ -310,7 +310,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnProduct, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnProduct, BunifuAnimatorNS.DecorationType.None);
             this.btnProduct.DisabledColor = System.Drawing.Color.Gray;
-            this.btnProduct.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Iconcolor = System.Drawing.Color.Transparent;
             this.btnProduct.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnProduct.Iconimage")));
@@ -350,7 +350,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnBill, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnBill, BunifuAnimatorNS.DecorationType.None);
             this.btnBill.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBill.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.ForeColor = System.Drawing.Color.White;
             this.btnBill.Iconcolor = System.Drawing.Color.Transparent;
             this.btnBill.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBill.Iconimage")));
@@ -390,7 +390,7 @@ namespace QLBH_BunifuUI.form
             this.PanelTransition.SetDecoration(this.btnDashboard, BunifuAnimatorNS.DecorationType.None);
             this.LogoTransition.SetDecoration(this.btnDashboard, BunifuAnimatorNS.DecorationType.None);
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
@@ -467,11 +467,11 @@ namespace QLBH_BunifuUI.form
             this.lblTitle.AutoSize = true;
             this.LogoTransition.SetDecoration(this.lblTitle, BunifuAnimatorNS.DecorationType.None);
             this.PanelTransition.SetDecoration(this.lblTitle, BunifuAnimatorNS.DecorationType.None);
-            this.lblTitle.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Transparent;
             this.lblTitle.Location = new System.Drawing.Point(45, 7);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(204, 23);
+            this.lblTitle.Size = new System.Drawing.Size(195, 24);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "DASHBOARD - TPT";
             // 
@@ -553,7 +553,7 @@ namespace QLBH_BunifuUI.form
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = null;
+            this.bunifuDragControl1.TargetControl = this.panelHeader;
             this.bunifuDragControl1.Vertical = true;
             // 
             // bunifuDragControlHeader
