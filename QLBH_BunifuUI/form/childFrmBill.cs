@@ -1,4 +1,5 @@
 ﻿using DTO.DAO;
+using DTO.Model;
 using System.Windows.Forms;
 
 namespace QLBH_BunifuUI.form
@@ -51,13 +52,21 @@ namespace QLBH_BunifuUI.form
         private void cbbProductCategory_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             int id = 0;
-            id = (int)cbbProductCategory.SelectedValue;
+            ComboBox cb = sender as ComboBox;
+            if (cb.SelectedItem == null)
+            {
+                return;
+            }
+            ProductCategory selected = cb.SelectedItem as ProductCategory;
+            id = selected.PCCode;
             LoadProductByCategoryID(id);
         }
 
         public void LoadProductByCategoryID(int id)
         {
             cbbProduct.DataSource = ProductDao.Instance.ListProductByCategory(id);
+            cbbProduct.DisplayMember = "ProductName";
+            cbbProduct.ValueMember = "ProductID";
         }
     }
 }
