@@ -46,6 +46,8 @@ namespace QLBH_BunifuUI.form
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
+            int idProduct = (cbbProduct.SelectedItem as Product).ProductID;
+            int quantity = (int)nmQuantity.Value;
 
         }
 

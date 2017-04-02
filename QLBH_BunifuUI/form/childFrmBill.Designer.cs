@@ -41,7 +41,7 @@ namespace QLBH_BunifuUI.form
             this.panelControl = new System.Windows.Forms.Panel();
             this.ptbImage = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nmQuantity = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbProduct = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@ namespace QLBH_BunifuUI.form
             this.childFrmBillElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmQuantity)).BeginInit();
             this.panelBillDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).BeginInit();
             this.panel1.SuspendLayout();
@@ -80,7 +80,7 @@ namespace QLBH_BunifuUI.form
             // 
             this.panelControl.Controls.Add(this.ptbImage);
             this.panelControl.Controls.Add(this.label2);
-            this.panelControl.Controls.Add(this.numericUpDown1);
+            this.panelControl.Controls.Add(this.nmQuantity);
             this.panelControl.Controls.Add(this.label1);
             this.panelControl.Controls.Add(this.cbbProduct);
             this.panelControl.Controls.Add(this.label11);
@@ -119,13 +119,13 @@ namespace QLBH_BunifuUI.form
             this.label2.TabIndex = 112;
             this.label2.Text = "Số lượng";
             // 
-            // numericUpDown1
+            // nmQuantity
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(675, 167);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(135, 26);
-            this.numericUpDown1.TabIndex = 111;
+            this.nmQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmQuantity.Location = new System.Drawing.Point(675, 167);
+            this.nmQuantity.Name = "nmQuantity";
+            this.nmQuantity.Size = new System.Drawing.Size(135, 26);
+            this.nmQuantity.TabIndex = 111;
             // 
             // label1
             // 
@@ -468,7 +468,7 @@ namespace QLBH_BunifuUI.form
             this.panelControl.ResumeLayout(false);
             this.panelControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmQuantity)).EndInit();
             this.panelBillDetail.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -485,7 +485,7 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Panel panelControl;
         private System.Windows.Forms.PictureBox ptbImage;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nmQuantity;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbProduct;
         private System.Windows.Forms.Label label11;
