@@ -86,12 +86,6 @@
     <Compile Include="form\childFrmDashboard.Designer.cs">
       <DependentUpon>childFrmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="form\childFrmListBill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="form\childFrmListBill.Designer.cs">
-      <DependentUpon>childFrmListBill.cs</DependentUpon>
-    </Compile>
     <Compile Include="form\childFrmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,9 +139,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\childFrmDashboard.resx">
       <DependentUpon>childFrmDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="form\childFrmListBill.resx">
-      <DependentUpon>childFrmListBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\childFrmProduct.resx">
       <DependentUpon>childFrmProduct.cs</DependentUpon>

@@ -32,27 +32,12 @@ namespace DTO.Properties {
             get {
                 return ((string)(this["ShopTPTConnectionString"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;Persist Security Info=True;User" +
-            " ID=sa;Password=tpt")]
-        public string ShopTPTConnectionString1 {
-            get {
-                return ((string)(this["ShopTPTConnectionString1"]));
+            set
+            {
+                this["ShopTPTConnectionString"] = value;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIVINGROOM-PC;Initial Catalog=ShopTPT;User ID=sa;Password=tpt")]
-        public string ShopTPTConnectionString2 {
-            get {
-                return ((string)(this["ShopTPTConnectionString2"]));
-            }
-        }
+        
     }
 }

@@ -51,7 +51,7 @@ namespace DTO.Model
     #endregion
 		
 		public ShopTPTDataContext() : 
-				base(global::DTO.Properties.Settings.Default.ShopTPTConnectionString2, mappingSource)
+				base(global::DTO.Properties.Settings.Default.ShopTPTConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
