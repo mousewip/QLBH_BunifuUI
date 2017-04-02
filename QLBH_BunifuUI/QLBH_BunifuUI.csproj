@@ -86,6 +86,12 @@
     <Compile Include="form\childFrmDashboard.Designer.cs">
       <DependentUpon>childFrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\childFrmListBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\childFrmListBill.Designer.cs">
+      <DependentUpon>childFrmListBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\childFrmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
