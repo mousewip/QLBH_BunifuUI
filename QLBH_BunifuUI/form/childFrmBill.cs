@@ -30,20 +30,8 @@ namespace QLBH_BunifuUI.form
             
             if (f != null)
             {
-                panelControl.Controls.Clear();
-                panelControl.Controls.Add(f);
-                f.Dock = DockStyle.Fill;
+                this.Hide();
                 f.Show();
-            }
-            else
-            {
-                childFrmListBill cflb = new childFrmListBill();
-                this.Controls.Clear();
-                //panelControl.Controls.Clear();
-                cflb.TopLevel = false;
-                this.Controls.Add(cflb);
-                cflb.Dock = DockStyle.Fill;
-                cflb.Show();
             }
         }
 

@@ -75,9 +75,16 @@ namespace QLBH_BunifuUI.form
             ChangTitle(btnBill);
             panelMain.Controls.Clear();
             Splash.cfb.TopLevel = false;
+            Splash.cflb.TopLevel = false;
+            
             panelMain.Controls.Add(Splash.cfb);
+            panelMain.Controls.Add(Splash.cflb);
             Splash.cfb.Dock = DockStyle.Fill;
+            Splash.cflb.Dock = DockStyle.Fill;
+            Splash.cflb.Show();
             Splash.cfb.Show();
+            Splash.cflb.Hide();
+
         }
 
         private void btnProduct_Click(object sender, EventArgs e)

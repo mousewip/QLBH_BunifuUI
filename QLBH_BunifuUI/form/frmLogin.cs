@@ -115,6 +115,7 @@ namespace QLBH_BunifuUI.form
 
         private void LoadAllForm()
         {
+            Splash.cflb = new childFrmListBill();
             Splash.frmMain = new FrmMain();
             Splash.cfd = new ChildFrmDashboard();
             Splash.cfb = new ChildFrmBill();

@@ -45,5 +45,16 @@ namespace QLBH_BunifuUI.form
                 cflb.Show();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            var f = Application.OpenForms["childFrmBill"];
+
+            if (f != null)
+            {
+                this.Hide();
+                f.Show();
+            }
+        }
     }
 }
