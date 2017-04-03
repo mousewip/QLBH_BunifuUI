@@ -81,7 +81,6 @@ namespace QLBH_BunifuUI.form
                         else
                             MessageBox.Show("Xóa thất bại");
                         GetListUser();
-
                     }
                 }
             }
@@ -114,7 +113,7 @@ namespace QLBH_BunifuUI.form
                 btnAccept.Visible = true;
                 btnChangePassword.Visible = true;
                 ChangeReadonlyInput(false);
-                btnCancel_Click(sender, e);
+               
             }
             else
             {
@@ -178,7 +177,7 @@ namespace QLBH_BunifuUI.form
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            
+            bool acceptUpdate = false;   
             int uID = int.Parse(txtUserID.Text.Trim());
             var user = UserDao.Instance.SelectSingleUserById(uID);
            // user.UserID = int.Parse(txtUserID.Text.Trim());
@@ -191,20 +190,31 @@ namespace QLBH_BunifuUI.form
 
             if (!string.IsNullOrEmpty(txtCurrentPassword.Text) && !string.IsNullOrEmpty(txtNewPassword.Text))
             {
-                user.Password = txtNewPassword.Text.Trim();
+                if(Helper.Md5Encrypt(txtCurrentPassword.Text.Trim()) == user.Password)
+                {
+                    acceptUpdate = true;
+                    user.Password = txtNewPassword.Text.Trim();
+                }
+                    
+                else
+                {
+                   // acceptUpdate = false;
+                    MessageBox.Show("Cập nhật không thành công \nMật khẩu cũ không đúng");
+                    btnCancel_Click(sender, e);
+                    return;
+                }
             }
 
-            if(UserDao.Instance.Update(user.UserID, user))
+            if (UserDao.Instance.Update(user.UserID, user))
             {
                 MessageBox.Show("Cập nhật thành công");
+                btnCancel_Click(sender, e);
             }
             else
             {
                 MessageBox.Show("Cập nhật không thành công");
             }
         }
-
-      
     }
 }
 

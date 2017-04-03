@@ -64,7 +64,6 @@ namespace QLBH_BunifuUI.form
             this.label9 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtCategory = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -72,6 +71,7 @@ namespace QLBH_BunifuUI.form
             this.label13 = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.cbbCategory = new System.Windows.Forms.ComboBox();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).BeginInit();
@@ -364,6 +364,7 @@ namespace QLBH_BunifuUI.form
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Visible = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAccept
@@ -401,6 +402,7 @@ namespace QLBH_BunifuUI.form
             this.btnAccept.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccept.Textcolor = System.Drawing.Color.White;
             this.btnAccept.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccept.Visible = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // btnUpdate
@@ -509,16 +511,6 @@ namespace QLBH_BunifuUI.form
             this.label10.TabIndex = 76;
             this.label10.Text = "Số lượng";
             // 
-            // txtCategory
-            // 
-            this.txtCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategory.Location = new System.Drawing.Point(664, 401);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.ReadOnly = true;
-            this.txtCategory.Size = new System.Drawing.Size(263, 26);
-            this.txtCategory.TabIndex = 8;
-            // 
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -601,11 +593,22 @@ namespace QLBH_BunifuUI.form
             this.label14.TabIndex = 68;
             this.label14.Text = "Tên sản phẩm";
             // 
+            // cbbCategory
+            // 
+            this.cbbCategory.Enabled = false;
+            this.cbbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbCategory.FormattingEnabled = true;
+            this.cbbCategory.Location = new System.Drawing.Point(664, 400);
+            this.cbbCategory.Name = "cbbCategory";
+            this.cbbCategory.Size = new System.Drawing.Size(263, 28);
+            this.cbbCategory.TabIndex = 89;
+            // 
             // ChildFrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 665);
+            this.Controls.Add(this.cbbCategory);
             this.Controls.Add(this.txtColor);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtSize);
@@ -620,7 +623,6 @@ namespace QLBH_BunifuUI.form
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label12);
@@ -674,7 +676,6 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label12;
@@ -682,5 +683,6 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cbbCategory;
     }
 }

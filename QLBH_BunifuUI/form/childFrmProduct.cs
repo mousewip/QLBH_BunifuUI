@@ -92,7 +92,7 @@ namespace QLBH_BunifuUI.form
 
         private void SetProductInfo(Product pd)
         {
-            txtCategory.Text = ProductCategoryDAO.Instance.SelectSingleProductCategory(pd.PCCode).PCName;
+           
             txtProductCode.Text = pd.ProductCode;
             txtProductName.Text = pd.ProductName;
             txtPrice.Text = pd.Price.ToString();
@@ -125,15 +125,7 @@ namespace QLBH_BunifuUI.form
 
         
 
-        private void ChangeReadonlyInput(bool val)
-        {
-           // txtProductCode.ReadOnly = val;
-            txtDiscount.ReadOnly = val;
-            txtTrademark.ReadOnly = val;
-            txtQuantity.ReadOnly = val;
-            txtPrice.ReadOnly = val;
-            txtProductName.ReadOnly = val;
-        }
+       
 
         private void btnCancel_Click(object sender, System.EventArgs e)
         {
@@ -171,6 +163,15 @@ namespace QLBH_BunifuUI.form
             btnCancel.Visible = true;
             btnAccept.Visible = true;
             btnUpdate.Visible = false;
+        }
+        private void ChangeReadonlyInput(bool val)
+        {
+            // txtProductCode.ReadOnly = val;
+            txtDiscount.ReadOnly = val;
+            txtTrademark.ReadOnly = val;
+            txtQuantity.ReadOnly = val;
+            txtPrice.ReadOnly = val;
+            txtProductName.ReadOnly = val;
         }
     }
 
