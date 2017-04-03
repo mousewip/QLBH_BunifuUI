@@ -107,6 +107,11 @@ namespace QLBH_BunifuUI.form
             }
         }
 
+        private Image ConvertBinary2Image(System.Data.Linq.Binary binary)
+        {
+            throw new System.NotImplementedException();
+        }
+
         private void dtgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex < 0)

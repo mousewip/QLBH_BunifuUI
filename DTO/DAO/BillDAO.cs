@@ -30,22 +30,29 @@ namespace DTO.DAO
             }
         }
 
-        public bool Add(Bill bill)
+        public int Add(int userId)
         {
+            Bill bill = new Bill()
+            {
+                UserCode = userId
+            };
+
             using (var db = new ShopTPTDataContext())
             {
                 db.Bills.InsertOnSubmit(bill);
+               
                 try
                 {
                     db.SubmitChanges();
-                    return true;
+                    return bill.BillID;
                 }
                 catch (Exception)
                 {
-                    return false;
+                    return -1;
                 }
             }
         }
+
 
         public bool Update(Bill bill)
         {
@@ -56,9 +63,8 @@ namespace DTO.DAO
                 {
                     tmp.BillID = bill.BillID;
                     tmp.CreateDate = bill.CreateDate;
-                    tmp.TotalAmount = bill.TotalAmount;
                     tmp.UserCode = bill.UserCode;
-                    tmp.CustomerName = bill.CustomerName;
+                   
                     try
                     {
                         db.SubmitChanges();
@@ -101,6 +107,14 @@ namespace DTO.DAO
                 {
                     return false;
                 }
+            }
+        }
+
+        public int GetLastBillID()
+        {
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.Bills.OrderByDescending(x => x.BillID).FirstOrDefault().BillID;
             }
         }
     }

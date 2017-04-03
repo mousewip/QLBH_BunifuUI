@@ -41,7 +41,7 @@ namespace QLBH_BunifuUI.form
             this.panelControl = new System.Windows.Forms.Panel();
             this.ptbImage = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nmQuantity = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbProduct = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,29 +60,27 @@ namespace QLBH_BunifuUI.form
             this.btnRefresh = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnDeleteProduct = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnAddProduct = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnAddNewBill = new Bunifu.Framework.UI.BunifuImageButton();
             this.childFrmProductElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.toolTipFrmProduct = new System.Windows.Forms.ToolTip(this.components);
             this.childFrmBillElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmQuantity)).BeginInit();
             this.panelBillDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddNewBill)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl
             // 
-            this.panelControl.Controls.Add(this.button1);
             this.panelControl.Controls.Add(this.ptbImage);
             this.panelControl.Controls.Add(this.label2);
-            this.panelControl.Controls.Add(this.numericUpDown1);
+            this.panelControl.Controls.Add(this.nmQuantity);
             this.panelControl.Controls.Add(this.label1);
             this.panelControl.Controls.Add(this.cbbProduct);
             this.panelControl.Controls.Add(this.label11);
@@ -121,13 +119,13 @@ namespace QLBH_BunifuUI.form
             this.label2.TabIndex = 112;
             this.label2.Text = "Số lượng";
             // 
-            // numericUpDown1
+            // nmQuantity
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(675, 167);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(135, 26);
-            this.numericUpDown1.TabIndex = 111;
+            this.nmQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmQuantity.Location = new System.Drawing.Point(675, 167);
+            this.nmQuantity.Name = "nmQuantity";
+            this.nmQuantity.Size = new System.Drawing.Size(135, 26);
+            this.nmQuantity.TabIndex = 111;
             // 
             // label1
             // 
@@ -323,9 +321,9 @@ namespace QLBH_BunifuUI.form
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductCode";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductID";
             this.dataGridViewTextBoxColumn1.FillWeight = 1F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Code";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã sản phẩm";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -342,6 +340,7 @@ namespace QLBH_BunifuUI.form
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "Quantity";
             this.Column1.FillWeight = 1F;
             this.Column1.HeaderText = "Số lượng";
             this.Column1.Name = "Column1";
@@ -350,6 +349,7 @@ namespace QLBH_BunifuUI.form
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "Total";
             this.Column2.FillWeight = 1F;
             this.Column2.HeaderText = "Thành tiền";
             this.Column2.Name = "Column2";
@@ -371,7 +371,7 @@ namespace QLBH_BunifuUI.form
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnDeleteProduct);
             this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.btnAddProduct);
+            this.panel1.Controls.Add(this.btnAddNewBill);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -435,18 +435,19 @@ namespace QLBH_BunifuUI.form
             this.btnSearch.TabStop = false;
             this.btnSearch.Zoom = 15;
             // 
-            // btnAddProduct
+            // btnAddNewBill
             // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnAddProduct.Image")));
-            this.btnAddProduct.ImageActive = null;
-            this.btnAddProduct.Location = new System.Drawing.Point(12, 13);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(50, 50);
-            this.btnAddProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnAddProduct.TabIndex = 0;
-            this.btnAddProduct.TabStop = false;
-            this.btnAddProduct.Zoom = 15;
+            this.btnAddNewBill.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddNewBill.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNewBill.Image")));
+            this.btnAddNewBill.ImageActive = null;
+            this.btnAddNewBill.Location = new System.Drawing.Point(12, 13);
+            this.btnAddNewBill.Name = "btnAddNewBill";
+            this.btnAddNewBill.Size = new System.Drawing.Size(50, 50);
+            this.btnAddNewBill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAddNewBill.TabIndex = 0;
+            this.btnAddNewBill.TabStop = false;
+            this.btnAddNewBill.Zoom = 15;
+            this.btnAddNewBill.Click += new System.EventHandler(this.btnAddNewBill_Click);
             // 
             // childFrmProductElipse
             // 
@@ -457,15 +458,6 @@ namespace QLBH_BunifuUI.form
             // 
             this.childFrmBillElipse.ElipseRadius = 0;
             this.childFrmBillElipse.TargetControl = this;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(595, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 115;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // ChildFrmBill
             // 
@@ -479,14 +471,14 @@ namespace QLBH_BunifuUI.form
             this.panelControl.ResumeLayout(false);
             this.panelControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmQuantity)).EndInit();
             this.panelBillDetail.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddNewBill)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -496,7 +488,7 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Panel panelControl;
         private System.Windows.Forms.PictureBox ptbImage;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nmQuantity;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbProduct;
         private System.Windows.Forms.Label label11;
@@ -505,21 +497,20 @@ namespace QLBH_BunifuUI.form
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panelBillDetail;
         private BunifuCustomDataGrid dtgvBillDetail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.ComboBox cbbProductCategory;
         private System.Windows.Forms.Panel panel1;
         private BunifuMetroTextbox txtSearch;
         private BunifuImageButton btnRefresh;
         private BunifuImageButton btnDeleteProduct;
         private BunifuImageButton btnSearch;
-        private BunifuImageButton btnAddProduct;
+        private BunifuImageButton btnAddNewBill;
         private BunifuElipse childFrmProductElipse;
         private System.Windows.Forms.ToolTip toolTipFrmProduct;
         private BunifuElipse childFrmBillElipse;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
 
     }
 }
