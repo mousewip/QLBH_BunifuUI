@@ -1,12 +1,14 @@
 ﻿using DTO.DAO;
 using DTO.Model;
 using QLBH_BunifuUI.Common;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace QLBH_BunifuUI.form
 {
     public partial class ChildFrmBill : Form
     {
+        private List<BillDetail> listBillDetail;
         public ChildFrmBill()
         {
             InitializeComponent();
@@ -47,12 +49,37 @@ namespace QLBH_BunifuUI.form
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
-            int idProduct = (cbbProduct.SelectedItem as Product).ProductID;
+            int productID = (cbbProduct.SelectedItem as Product).ProductID;
             int quantity = (int)nmQuantity.Value;
+            int billID = 0;
+            BillDetail billDetail = new BillDetail();
 
-            Bill bill = new Bill();
-            bill.UserCode = (int)Session.Instance.Get("ID");
-            if()
+            if (listBillDetail == null)
+            {
+                listBillDetail = new List<BillDetail>();
+
+                billDetail.BillID = BillDAO.Instance.GetLastBillID();
+                MessageBox.Show(billID.ToString());
+                billDetail.Quantity = quantity;
+                billDetail.ProductID = productID;
+                billDetail.Total = quantity * ProductDao.Instance.GetPrice(productID);
+                BillDetailDAO.Instance.Add(billDetail);
+                listBillDetail.Add(billDetail);
+
+            }
+            else
+            {
+                billDetail.BillID = billID;
+                billDetail.Quantity = quantity;
+                billDetail.ProductID = productID;
+                billDetail.Total = quantity * ProductDao.Instance.GetPrice(productID);
+                BillDetailDAO.Instance.Add(billDetail);
+                listBillDetail.Add(billDetail);
+            }
+
+            dtgvBillDetail.DataSource = listBillDetail;
+	
+            
 
         }
 
@@ -75,5 +102,19 @@ namespace QLBH_BunifuUI.form
             cbbProduct.DisplayMember = "ProductName";
             cbbProduct.ValueMember = "ProductID";
         }
+
+        private void btnAddNewBill_Click(object sender, System.EventArgs e)
+        {
+            int billID = 0;
+            int userID = (int)Session.Instance.Get("ID");
+            billID = BillDAO.Instance.Add(userID);
+            if (billID > 0)
+            {
+                MessageBox.Show("Bạn vừa tạo mới hóa đơn");
+                listBillDetail = null;
+            }
+        }
+
+        
     }
 }

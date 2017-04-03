@@ -208,7 +208,7 @@ namespace DTO.Model
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="Date")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="Date", IsDbGenerated=true)]
 		public System.Nullable<System.DateTime> CreateDate
 		{
 			get

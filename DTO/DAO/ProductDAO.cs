@@ -42,6 +42,15 @@ namespace DTO.DAO
             } 
         }
 
+        public double? GetPrice(int id)
+        {
+            
+            using (var db = new ShopTPTDataContext())
+            {
+                return db.Products.SingleOrDefault(p => p.ProductID == id).Price;  
+            }
+        }
+
         public bool Add(Product product)
         {
             using (var db = new ShopTPTDataContext())
